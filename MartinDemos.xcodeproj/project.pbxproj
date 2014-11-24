@@ -14,6 +14,12 @@
 		8F4793661A1F543900546648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4793651A1F543900546648 /* Images.xcassets */; };
 		8F4793691A1F543900546648 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4793671A1F543900546648 /* LaunchScreen.xib */; };
 		8F4793751A1F543900546648 /* MartinDemosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4793741A1F543900546648 /* MartinDemosTests.m */; };
+		8F4793811A1F54FE00546648 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4793801A1F54FE00546648 /* TitleCell.m */; };
+		8F4793841A1F561C00546648 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4793831A1F561C00546648 /* TouchIDViewController.m */; };
+		8F4793861A1F570F00546648 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4793851A1F570F00546648 /* LocalAuthentication.framework */; };
+		8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9939A41A23318C00CC8128 /* ScrollPageViewController.m */; };
+		8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */; };
+		8F9939B11A23431A00CC8128 /* testImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F9939B01A23431A00CC8128 /* testImg1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,16 @@
 		8F47936E1A1F543900546648 /* MartinDemosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MartinDemosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4793731A1F543900546648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F4793741A1F543900546648 /* MartinDemosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MartinDemosTests.m; sourceTree = "<group>"; };
+		8F47937F1A1F54FE00546648 /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		8F4793801A1F54FE00546648 /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
+		8F4793821A1F561C00546648 /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
+		8F4793831A1F561C00546648 /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
+		8F4793851A1F570F00546648 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		8F9939A31A23318C00CC8128 /* ScrollPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPageViewController.h; sourceTree = "<group>"; };
+		8F9939A41A23318C00CC8128 /* ScrollPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPageViewController.m; sourceTree = "<group>"; };
+		8F9939AB1A2331F800CC8128 /* MartinLiPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MartinLiPageScrollView.h; sourceTree = "<group>"; };
+		8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MartinLiPageScrollView.m; sourceTree = "<group>"; };
+		8F9939B01A23431A00CC8128 /* testImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImg1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4793861A1F570F00546648 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 		8F47934C1A1F543900546648 = {
 			isa = PBXGroup;
 			children = (
+				8F4793851A1F570F00546648 /* LocalAuthentication.framework */,
 				8F4793571A1F543900546648 /* MartinDemos */,
 				8F4793711A1F543900546648 /* MartinDemosTests */,
 				8F4793561A1F543900546648 /* Products */,
@@ -81,6 +99,9 @@
 		8F4793571A1F543900546648 /* MartinDemos */ = {
 			isa = PBXGroup;
 			children = (
+				8F9939AE1A23431A00CC8128 /* resource */,
+				8F9939A91A2331F800CC8128 /* Tools */,
+				8F47937E1A1F54DF00546648 /* Cells */,
 				8F47935C1A1F543900546648 /* AppDelegate.h */,
 				8F47935D1A1F543900546648 /* AppDelegate.m */,
 				8F47935F1A1F543900546648 /* ViewController.h */,
@@ -89,6 +110,10 @@
 				8F4793651A1F543900546648 /* Images.xcassets */,
 				8F4793671A1F543900546648 /* LaunchScreen.xib */,
 				8F4793581A1F543900546648 /* Supporting Files */,
+				8F4793821A1F561C00546648 /* TouchIDViewController.h */,
+				8F4793831A1F561C00546648 /* TouchIDViewController.m */,
+				8F9939A31A23318C00CC8128 /* ScrollPageViewController.h */,
+				8F9939A41A23318C00CC8128 /* ScrollPageViewController.m */,
 			);
 			path = MartinDemos;
 			sourceTree = "<group>";
@@ -117,6 +142,48 @@
 				8F4793731A1F543900546648 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F47937E1A1F54DF00546648 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8F47937F1A1F54FE00546648 /* TitleCell.h */,
+				8F4793801A1F54FE00546648 /* TitleCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8F9939A91A2331F800CC8128 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8F9939AA1A2331F800CC8128 /* MartinLiPageScrollView */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8F9939AA1A2331F800CC8128 /* MartinLiPageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				8F9939AB1A2331F800CC8128 /* MartinLiPageScrollView.h */,
+				8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */,
+			);
+			path = MartinLiPageScrollView;
+			sourceTree = "<group>";
+		};
+		8F9939AE1A23431A00CC8128 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				8F9939AF1A23431A00CC8128 /* imgs */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		8F9939AF1A23431A00CC8128 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				8F9939B01A23431A00CC8128 /* testImg1.png */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F4793641A1F543900546648 /* Main.storyboard in Resources */,
+				8F9939B11A23431A00CC8128 /* testImg1.png in Resources */,
 				8F4793691A1F543900546648 /* LaunchScreen.xib in Resources */,
 				8F4793661A1F543900546648 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4793811A1F54FE00546648 /* TitleCell.m in Sources */,
 				8F4793611A1F543900546648 /* ViewController.m in Sources */,
 				8F47935E1A1F543900546648 /* AppDelegate.m in Sources */,
+				8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */,
+				8F4793841A1F561C00546648 /* TouchIDViewController.m in Sources */,
+				8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */,
 				8F47935B1A1F543900546648 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +484,7 @@
 				8F47937A1A1F543900546648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F47937B1A1F543900546648 /* Build configuration list for PBXNativeTarget "MartinDemosTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +493,7 @@
 				8F47937D1A1F543900546648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
