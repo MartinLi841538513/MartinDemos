@@ -7,7 +7,7 @@
 //
 
 #import "MLFloatButton.h"
-
+#define StatusBarFrame [[UIApplication sharedApplication] statusBarFrame]
 @interface MLFloatButton()
 {
     BOOL isMoving;
@@ -41,7 +41,23 @@
 - (void)dragDidMoving:(MLFloatButton *)button withEvent:(UIEvent *)ev
 {
     isMoving = YES;
-    button.center = [[[ev allTouches] anyObject] locationInView:button.fatherView];
+    CGPoint point = [[[ev allTouches] anyObject] locationInView:button.fatherView];
+    float halfWidth = button.frame.size.width/2;
+    float halfHeight = button.frame.size.height/2;
+    float rightEdge = button.fatherView.frame.size.width-halfWidth;
+    float topEdge = button.fatherView.frame.origin.y+StatusBarFrame.size.height+44+halfHeight;
+    float bottomEdge = button.fatherView.frame.size.height-halfHeight;
+    if (point.x<=halfWidth) {
+        point.x=halfWidth;
+    }else if(point.x>=rightEdge){
+        point.x = rightEdge;
+    }
+    if(point.y<=topEdge){
+        point.y = topEdge;
+    }else if(point.y>=bottomEdge){
+        point.y = bottomEdge;
+    }
+    button.center = point;
 }
 
 - (void)didTouched:(MLFloatButton *)button withEvent:(UIEvent *)ev{
