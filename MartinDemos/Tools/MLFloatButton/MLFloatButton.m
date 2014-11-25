@@ -61,11 +61,58 @@
 }
 
 - (void)didTouched:(MLFloatButton *)button withEvent:(UIEvent *)ev{
-    
     if (!isMoving) {
         [button.floatButtonDelegate buttonTouchAction];
     }else{
         isMoving = NO;
+        
+        CGPoint point = [[[ev allTouches] anyObject] locationInView:button.fatherView];
+        float halfWidth = button.frame.size.width/2;
+        float halfHeight = button.frame.size.height/2;
+        float rightEdge = button.fatherView.frame.size.width-halfWidth;
+        float topEdge = button.fatherView.frame.origin.y+StatusBarFrame.size.height+44+halfHeight;
+        float bottomEdge = button.fatherView.frame.size.height-halfHeight;
+        
+        //上右下左 0 1 2 3
+        float valueTop = point.y-topEdge;  //0
+        float valueRight = rightEdge-point.x;  //1
+        float valueBottom = bottomEdge-point.y;  //2
+        float valueLeft = point.x-halfWidth;  //3
+        
+        float min = valueTop;
+        int tag = 0;
+
+        if (valueRight<min) {
+            min=valueRight;
+            tag = 1;
+        }
+        if (valueBottom<min) {
+            min=valueBottom;
+            tag =2;
+        }
+        if (valueLeft<min) {
+            min = valueLeft;
+            tag = 1;  //由于考虑到navigation左滑会有返回的效果，所以尽量不让button停靠在左边。
+        }
+        
+        if (tag==0) {
+            [UIView animateWithDuration:0.5 animations:^(void){
+                button.center = CGPointMake(point.x, topEdge);
+            }];
+        }else if(tag==1){
+            [UIView animateWithDuration:0.5 animations:^(void){
+                button.center = CGPointMake(rightEdge, point.y);
+            }];
+        }else if(tag==2){
+            [UIView animateWithDuration:0.5 animations:^(void){
+                button.center = CGPointMake(point.x, bottomEdge);
+            }];
+        }else if(tag==3){
+            [UIView animateWithDuration:0.5 animations:^(void){
+                button.center = CGPointMake(halfWidth, point.y);
+            }];
+        }
+        
     }
 }
 
