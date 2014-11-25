@@ -58,6 +58,9 @@
     
     [self addSubview:[self setUpPageControlWithImgs:imgs]];
 
+    if(!self.timeInterval){
+        self.timeInterval=2.0;
+    }
     [NSTimer scheduledTimerWithTimeInterval:self.timeInterval target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
 }
 
