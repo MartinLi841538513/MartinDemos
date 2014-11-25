@@ -33,6 +33,11 @@
     return button;
 }
 
+-(void)showInFatherView:(UIView *)fatherView{
+    [fatherView addSubview:self];
+    self.fatherView = fatherView;
+}
+
 - (void)dragDidMoving:(MLFloatButton *)button withEvent:(UIEvent *)ev
 {
     isMoving = YES;

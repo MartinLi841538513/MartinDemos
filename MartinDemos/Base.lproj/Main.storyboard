@@ -153,7 +153,6 @@
                                     <rect key="frame" x="177" y="142" width="34" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="pushAction:" destination="1E1-up-xzQ" eventType="touchUpInside" id="IQY-9h-zbB"/>
                                     <segue destination="rEG-8l-VWl" kind="show" identifier="FloatButtonPush" id="Nvr-No-tXF"/>
                                 </connections>
                             </button>

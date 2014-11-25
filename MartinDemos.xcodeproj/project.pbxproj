@@ -11,8 +11,8 @@
 		8F4736F71A24448000907787 /* FloatButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4736F61A24448000907787 /* FloatButtonViewController.m */; };
 		8F4736FB1A244BFB00907787 /* UIView+LoadFromNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4736FA1A244BFB00907787 /* UIView+LoadFromNib.m */; };
 		8F4736FD1A244F8600907787 /* MLFloatButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4736FC1A244F8600907787 /* MLFloatButton.xib */; };
-		8F4737011A249ABE00907787 /* testImg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4737001A249ABE00907787 /* testImg2.png */; };
 		8F4737041A249BE200907787 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4737031A249BE200907787 /* SecondViewController.m */; };
+		8F4737061A24A6E100907787 /* testImg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4737051A24A6E100907787 /* testImg2.png */; };
 		8F47935B1A1F543900546648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F47935A1A1F543900546648 /* main.m */; };
 		8F47935E1A1F543900546648 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F47935D1A1F543900546648 /* AppDelegate.m */; };
 		8F4793611A1F543900546648 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4793601A1F543900546648 /* ViewController.m */; };
@@ -48,9 +48,9 @@
 		8F4736F91A244BFB00907787 /* UIView+LoadFromNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LoadFromNib.h"; sourceTree = "<group>"; };
 		8F4736FA1A244BFB00907787 /* UIView+LoadFromNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadFromNib.m"; sourceTree = "<group>"; };
 		8F4736FC1A244F8600907787 /* MLFloatButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLFloatButton.xib; sourceTree = "<group>"; };
-		8F4737001A249ABE00907787 /* testImg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImg2.png; sourceTree = "<group>"; };
 		8F4737021A249BE200907787 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		8F4737031A249BE200907787 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8F4737051A24A6E100907787 /* testImg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImg2.png; sourceTree = "<group>"; };
 		8F4793551A1F543900546648 /* MartinDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartinDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4793591A1F543900546648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F47935A1A1F543900546648 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +118,7 @@
 		8F4736EE1A2443D600907787 /* MLFloatButton */ = {
 			isa = PBXGroup;
 			children = (
+				8F4737051A24A6E100907787 /* testImg2.png */,
 				8F4736F01A2443EF00907787 /* MLFloatButton.h */,
 				8F4736F11A2443EF00907787 /* MLFloatButton.m */,
 				8F4736FC1A244F8600907787 /* MLFloatButton.xib */,
@@ -254,7 +255,6 @@
 		8F9939AF1A23431A00CC8128 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
-				8F4737001A249ABE00907787 /* testImg2.png */,
 				8F9939B01A23431A00CC8128 /* testImg1.png */,
 			);
 			path = imgs;
@@ -343,7 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F4736FD1A244F8600907787 /* MLFloatButton.xib in Resources */,
-				8F4737011A249ABE00907787 /* testImg2.png in Resources */,
+				8F4737061A24A6E100907787 /* testImg2.png in Resources */,
 				8F4793641A1F543900546648 /* Main.storyboard in Resources */,
 				8F9939B11A23431A00CC8128 /* testImg1.png in Resources */,
 				8F4793691A1F543900546648 /* LaunchScreen.xib in Resources */,

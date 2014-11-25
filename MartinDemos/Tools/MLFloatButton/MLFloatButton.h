@@ -15,6 +15,7 @@
 
 @interface MLFloatButton : UIButton
 +(MLFloatButton *)loadFromNibWithFrame:(CGRect)frame addTarget:(id)target InSuperView:(UIView *)superView;
+-(void)showInFatherView:(UIView *)fatherView;
 @property(nonatomic,strong)UIView *fatherView;
 @property(nonatomic,strong)id<MLFloatButtonDelegate> floatButtonDelegate;
 @end
