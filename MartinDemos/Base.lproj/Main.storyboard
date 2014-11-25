@@ -49,9 +49,6 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="18" width="271" height="20.5"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -129,11 +126,72 @@
                         <outlet property="tableview" destination="vVx-eF-ojU" id="QeS-qJ-AaG"/>
                         <segue destination="BqS-Ie-y7y" kind="show" identifier="TouchIDViewController" id="xWF-9z-L9g"/>
                         <segue destination="9CE-mG-YYE" kind="show" id="DhH-vV-A5R"/>
+                        <segue destination="1E1-up-xzQ" kind="show" id="63e-12-fPg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244.5" y="302"/>
+        </scene>
+        <!--Float Button View Controller-->
+        <scene sceneID="dtC-br-JwR">
+            <objects>
+                <viewController storyboardIdentifier="FloatButtonViewController" id="1E1-up-xzQ" customClass="FloatButtonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Lw-5N-fvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qdx-tJ-7hz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AbS-n8-lU3">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iet-ee-SWp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="142" width="34" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pushAction:" destination="1E1-up-xzQ" eventType="touchUpInside" id="IQY-9h-zbB"/>
+                                    <segue destination="rEG-8l-VWl" kind="show" identifier="FloatButtonPush" id="Nvr-No-tXF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iet-ee-SWp"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iet-ee-SWp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xd4-5f-5tL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051.5" y="230"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="LHB-QU-Zgc">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="rEG-8l-VWl" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r3b-Iz-anB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z2j-OD-ZVR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kYA-uP-Bxp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="jJW-Ld-NoN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bc-Dg-GVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.5" y="224"/>
         </scene>
         <!--TouchID View Controller-->
         <scene sceneID="qhw-mA-T0I">
@@ -175,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ny-gu-LB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087.5" y="302"/>
+            <point key="canvasLocation" x="1027.5" y="-1138"/>
         </scene>
         <!--Scroll Page View Controller-->
         <scene sceneID="tzm-2l-DHx">
@@ -241,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHS-pN-hfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1102.5" y="1040"/>
+            <point key="canvasLocation" x="1027.5" y="-448"/>
         </scene>
     </scenes>
 </document>
