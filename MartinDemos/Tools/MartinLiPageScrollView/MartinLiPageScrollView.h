@@ -16,9 +16,13 @@
 
 @interface MartinLiPageScrollView : UIScrollView<UIScrollViewDelegate>
 @property(nonatomic,strong)NSArray *imgs;
+@property(nonatomic,strong)NSArray *titles;
 @property(nonatomic,assign)float height;
-@property(nonatomic,weak)id<MartinLiPageScrollViewDelegate> martinLiPageScrollViewDelegate;
 @property(nonatomic,assign)float timeInterval;
+@property(nonatomic,weak)id<MartinLiPageScrollViewDelegate> martinLiPageScrollViewDelegate;
+
+@property(nonatomic)BOOL titleIsHidden;  //默认BOOL为NO
+
 -(void)updatePageViewInSuperView:(UIView *)superView;
--(void)updatePageViewWithImgs:(NSArray *)imgs inSuperView:(UIView *)superView;
+-(void)updatePageViewWithImgs:(NSArray *)imgs andTitles:(NSArray *)titles inSuperView:(UIView *)superView;
 @end

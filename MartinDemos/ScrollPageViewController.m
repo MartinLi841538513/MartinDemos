@@ -18,11 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.pageView.imgs = [NSArray arrayWithObjects:@"testImg1",@"testImg1",@"testImg1", nil];
+    self.pageView.imgs = [NSArray arrayWithObjects:@"testImg1.png",@"testImg1.png",@"http://gtms04.alicdn.com/tps/i4/TB10SpoGFXXXXXbapXXvKyzTVXX-520-280.jpg", nil];
+    self.pageView.titles = [NSArray arrayWithObjects:@"1",@"2",@"3", nil];
     self.pageView.martinLiPageScrollViewDelegate = self;
     self.pageView.height = self.height.constant;
     self.pageView.timeInterval = 2;
+    self.pageView.titleIsHidden = NO;
     [self.pageView updatePageViewInSuperView:self.view];
+
 }
 
 

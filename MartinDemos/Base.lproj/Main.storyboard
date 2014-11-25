@@ -186,6 +186,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CVc-0q-zcJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dJX-7E-iZy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="648-3z-2mP" customClass="MartinLiPageScrollView">
