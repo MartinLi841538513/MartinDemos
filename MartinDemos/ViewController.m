@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",nil];
+    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +46,8 @@
         identifier = @"ScrollPageViewController";
     }else if(row==2){
         identifier = @"FloatButtonViewController";
+    }else if(row==3){
+        identifier = @"ContactsViewController";
     }
     target = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
     [self.navigationController pushViewController:target animated:YES];
