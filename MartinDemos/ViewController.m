@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "TitleCell.h"
+#import "UploadImgViewController.h"
+#import "TakePhotoViewControllerViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",nil];
+    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +42,7 @@
     NSInteger row = indexPath.row;
     UIViewController *target = nil;
     NSString *identifier = nil;
+    NSString *nibName = nil;
     if (row==0) {
         identifier = @"TouchIDViewController";
     }else if(row==1){
@@ -48,8 +51,16 @@
         identifier = @"FloatButtonViewController";
     }else if(row==3){
         identifier = @"ContactsViewController";
+    }else if(row==4){
+        nibName = @"UploadImgViewController";
+        target = [[UploadImgViewController alloc] initWithNibName:nibName bundle:nil];
+    }else if(row==5){
+        nibName = @"TakePhotoViewControllerViewController";
+        target = [[TakePhotoViewControllerViewController alloc] initWithNibName:nibName bundle:nil];
     }
-    target = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+    if (identifier!=nil) {
+        target = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+    }
     [self.navigationController pushViewController:target animated:YES];
 
 }

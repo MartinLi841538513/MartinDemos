@@ -187,6 +187,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TCm-Gd-c4B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8WY-MC-RVU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入联系电话" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-9x-rnI">

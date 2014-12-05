@@ -29,6 +29,10 @@
 		8FE932331A30656B000C2105 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932321A30656B000C2105 /* ContactsViewController.m */; };
 		8FE932351A3065FF000C2105 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE932341A3065FF000C2105 /* AddressBook.framework */; };
 		8FE932371A306603000C2105 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE932361A306603000C2105 /* AddressBookUI.framework */; };
+		8FE9323B1A30897C000C2105 /* UploadImgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932391A30897C000C2105 /* UploadImgViewController.m */; };
+		8FE9323C1A30897C000C2105 /* UploadImgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9323A1A30897C000C2105 /* UploadImgViewController.xib */; };
+		8FE932431A315E17000C2105 /* TakePhotoViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932411A315E17000C2105 /* TakePhotoViewControllerViewController.m */; };
+		8FE932441A315E17000C2105 /* TakePhotoViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932421A315E17000C2105 /* TakePhotoViewControllerViewController.xib */; };
 		BEB167C2178E79322BDF4BFD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2952D1E2062EAD63DBA4C05 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +85,12 @@
 		8FE932321A30656B000C2105 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		8FE932341A3065FF000C2105 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		8FE932361A306603000C2105 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		8FE932381A30897C000C2105 /* UploadImgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImgViewController.h; sourceTree = "<group>"; };
+		8FE932391A30897C000C2105 /* UploadImgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImgViewController.m; sourceTree = "<group>"; };
+		8FE9323A1A30897C000C2105 /* UploadImgViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImgViewController.xib; sourceTree = "<group>"; };
+		8FE932401A315E17000C2105 /* TakePhotoViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoViewControllerViewController.h; sourceTree = "<group>"; };
+		8FE932411A315E17000C2105 /* TakePhotoViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoViewControllerViewController.m; sourceTree = "<group>"; };
+		8FE932421A315E17000C2105 /* TakePhotoViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotoViewControllerViewController.xib; sourceTree = "<group>"; };
 		A94207C37E38257A10DEF697 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E2952D1E2062EAD63DBA4C05 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -199,6 +209,12 @@
 				8F9939A41A23318C00CC8128 /* ScrollPageViewController.m */,
 				8FE932311A30656B000C2105 /* ContactsViewController.h */,
 				8FE932321A30656B000C2105 /* ContactsViewController.m */,
+				8FE932381A30897C000C2105 /* UploadImgViewController.h */,
+				8FE932391A30897C000C2105 /* UploadImgViewController.m */,
+				8FE9323A1A30897C000C2105 /* UploadImgViewController.xib */,
+				8FE932401A315E17000C2105 /* TakePhotoViewControllerViewController.h */,
+				8FE932411A315E17000C2105 /* TakePhotoViewControllerViewController.m */,
+				8FE932421A315E17000C2105 /* TakePhotoViewControllerViewController.xib */,
 			);
 			path = MartinDemos;
 			sourceTree = "<group>";
@@ -358,10 +374,12 @@
 			files = (
 				8F4736FD1A244F8600907787 /* MLFloatButton.xib in Resources */,
 				8F4737061A24A6E100907787 /* testImg2.png in Resources */,
+				8FE9323C1A30897C000C2105 /* UploadImgViewController.xib in Resources */,
 				8F4793641A1F543900546648 /* Main.storyboard in Resources */,
 				8F9939B11A23431A00CC8128 /* testImg1.png in Resources */,
 				8F4793691A1F543900546648 /* LaunchScreen.xib in Resources */,
 				8F4793661A1F543900546648 /* Images.xcassets in Resources */,
+				8FE932441A315E17000C2105 /* TakePhotoViewControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,10 +436,12 @@
 				8F47935E1A1F543900546648 /* AppDelegate.m in Sources */,
 				8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */,
 				8F4793841A1F561C00546648 /* TouchIDViewController.m in Sources */,
+				8FE9323B1A30897C000C2105 /* UploadImgViewController.m in Sources */,
 				8F4736F21A2443EF00907787 /* MLFloatButton.m in Sources */,
 				8F4736FB1A244BFB00907787 /* UIView+LoadFromNib.m in Sources */,
 				8F4736F71A24448000907787 /* FloatButtonViewController.m in Sources */,
 				8F4737041A249BE200907787 /* SecondViewController.m in Sources */,
+				8FE932431A315E17000C2105 /* TakePhotoViewControllerViewController.m in Sources */,
 				8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */,
 				8F47935B1A1F543900546648 /* main.m in Sources */,
 			);
