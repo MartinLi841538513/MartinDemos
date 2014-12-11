@@ -31,7 +31,7 @@
 
 
 #pragma MartinLiPageScrollViewDelegate
--(void)imgViewDidTouchActionAtIndex:(NSInteger)index{
+-(void)imgViewDidTouchActionAtIndex:(NSInteger)index inArray:(NSArray *)array{
     NSLog(@"%d",index);
 }
 @end

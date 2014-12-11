@@ -10,6 +10,11 @@
 #import "TitleCell.h"
 #import "UploadImgViewController.h"
 #import "TakePhotoViewControllerViewController.h"
+#import "MapViewController.h"
+#import "EGOImageLoadingViewController.h"
+#import "LocateViewController.h"
+#import "StarViewDemoViewController.h"
+#import "LabelHeightViewController.h"
 @interface ViewController ()
 
 @end
@@ -19,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",nil];
+    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",@"地图",@"EGOImageLoading",@"定位",@"starViewDemo",@"LabelHeight",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +62,19 @@
     }else if(row==5){
         nibName = @"TakePhotoViewControllerViewController";
         target = [[TakePhotoViewControllerViewController alloc] initWithNibName:nibName bundle:nil];
+    }else if(row==6){
+        nibName = @"MapViewController";
+        target = [[MapViewController alloc] initWithNibName:nibName bundle:nil];
+    }else if(row==7){
+        nibName = @"EGOImageLoadingViewController";
+        target = [[EGOImageLoadingViewController alloc] initWithNibName:nibName bundle:nil];
+    }else if (row==8){
+        nibName = @"LocateViewController";
+        target = [[LocateViewController alloc] initWithNibName:nibName bundle:nil];
+    }else if (row==9){
+        target = [[StarViewDemoViewController alloc] initWithNibName:@"StarViewDemoViewController" bundle:nil];
+    }else if(row==10){
+        target = [[LabelHeightViewController alloc] initWithNibName:@"LabelHeightViewController" bundle:nil];
     }
     if (identifier!=nil) {
         target = [self.storyboard instantiateViewControllerWithIdentifier:identifier];

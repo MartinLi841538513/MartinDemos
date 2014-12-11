@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGOImageLoadingViewController">
+            <connections>
+                <outlet property="imgView" destination="Ay8-94-NFa" id="lXd-DT-VF9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ay8-94-NFa" customClass="EGOImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="142" id="mNq-oW-gRb"/>
+                        <constraint firstAttribute="width" constant="188" id="zo3-o1-5NO"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="mNq-oW-gRb"/>
+                            <exclude reference="zo3-o1-5NO"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="mNq-oW-gRb"/>
+                            <include reference="zo3-o1-5NO"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Ay8-94-NFa" secondAttribute="centerX" id="5RC-c5-IZl"/>
+                <constraint firstItem="Ay8-94-NFa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="J2N-fC-niq"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Ay8-94-NFa"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5RC-c5-IZl"/>
+                    <exclude reference="J2N-fC-niq"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Ay8-94-NFa"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5RC-c5-IZl"/>
+                    <include reference="J2N-fC-niq"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

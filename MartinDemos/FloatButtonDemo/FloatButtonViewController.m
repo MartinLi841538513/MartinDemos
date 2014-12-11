@@ -19,6 +19,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     floatButton = [MLFloatButton loadFromNibWithFrame:CGRectMake(100, 100, 32, 32) addTarget:self InSuperView:self.view];//这里一定要在viewWillAppear实现，否则，popBack将会看不到效果
+ 
 }
 
 #pragma mark - Navigation

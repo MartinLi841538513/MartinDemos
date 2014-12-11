@@ -26,6 +26,9 @@
 		8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9939A41A23318C00CC8128 /* ScrollPageViewController.m */; };
 		8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */; };
 		8F9939B11A23431A00CC8128 /* testImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F9939B01A23431A00CC8128 /* testImg1.png */; };
+		8FDF00271A355CBC00977DFA /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF00251A355CBC00977DFA /* LabelHeightViewController.m */; };
+		8FDF00281A355CBC00977DFA /* LabelHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF00261A355CBC00977DFA /* LabelHeightViewController.xib */; };
+		8FDF002C1A35623000977DFA /* NSString+ML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF002B1A35623000977DFA /* NSString+ML.m */; };
 		8FE932331A30656B000C2105 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932321A30656B000C2105 /* ContactsViewController.m */; };
 		8FE932351A3065FF000C2105 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE932341A3065FF000C2105 /* AddressBook.framework */; };
 		8FE932371A306603000C2105 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE932361A306603000C2105 /* AddressBookUI.framework */; };
@@ -33,6 +36,19 @@
 		8FE9323C1A30897C000C2105 /* UploadImgViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9323A1A30897C000C2105 /* UploadImgViewController.xib */; };
 		8FE932431A315E17000C2105 /* TakePhotoViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932411A315E17000C2105 /* TakePhotoViewControllerViewController.m */; };
 		8FE932441A315E17000C2105 /* TakePhotoViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932421A315E17000C2105 /* TakePhotoViewControllerViewController.xib */; };
+		8FE9324B1A31904A000C2105 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932491A31904A000C2105 /* MapViewController.m */; };
+		8FE9324C1A31904A000C2105 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9324A1A31904A000C2105 /* MapViewController.xib */; };
+		8FE932541A31AC18000C2105 /* EGOImageLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932521A31AC18000C2105 /* EGOImageLoadingViewController.m */; };
+		8FE932551A31AC18000C2105 /* EGOImageLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932531A31AC18000C2105 /* EGOImageLoadingViewController.xib */; };
+		8FE932931A31E3CB000C2105 /* LocateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932911A31E3CB000C2105 /* LocateViewController.m */; };
+		8FE932941A31E3CB000C2105 /* LocateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932921A31E3CB000C2105 /* LocateViewController.xib */; };
+		8FE932961A31E3E9000C2105 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE932951A31E3E9000C2105 /* CoreLocation.framework */; };
+		8FE932E21A342EA7000C2105 /* StarViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932E01A342EA7000C2105 /* StarViewDemoViewController.m */; };
+		8FE932E31A342EA7000C2105 /* StarViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932E11A342EA7000C2105 /* StarViewDemoViewController.xib */; };
+		8FE932E81A342ED8000C2105 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE932E61A342ED8000C2105 /* StarView.m */; };
+		8FE932E91A342ED8000C2105 /* StarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932E71A342ED8000C2105 /* StarView.xib */; };
+		8FE932EC1A342F48000C2105 /* icon_ratingbar_full_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932EA1A342F48000C2105 /* icon_ratingbar_full_empty.png */; };
+		8FE932ED1A342F48000C2105 /* icon_ratingbar_full_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE932EB1A342F48000C2105 /* icon_ratingbar_full_filled.png */; };
 		BEB167C2178E79322BDF4BFD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2952D1E2062EAD63DBA4C05 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +97,11 @@
 		8F9939AB1A2331F800CC8128 /* MartinLiPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MartinLiPageScrollView.h; sourceTree = "<group>"; };
 		8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MartinLiPageScrollView.m; sourceTree = "<group>"; };
 		8F9939B01A23431A00CC8128 /* testImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImg1.png; sourceTree = "<group>"; };
+		8FDF00241A355CBC00977DFA /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
+		8FDF00251A355CBC00977DFA /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
+		8FDF00261A355CBC00977DFA /* LabelHeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelHeightViewController.xib; sourceTree = "<group>"; };
+		8FDF002A1A35623000977DFA /* NSString+ML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ML.h"; sourceTree = "<group>"; };
+		8FDF002B1A35623000977DFA /* NSString+ML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ML.m"; sourceTree = "<group>"; };
 		8FE932311A30656B000C2105 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		8FE932321A30656B000C2105 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		8FE932341A3065FF000C2105 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -91,6 +112,25 @@
 		8FE932401A315E17000C2105 /* TakePhotoViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoViewControllerViewController.h; sourceTree = "<group>"; };
 		8FE932411A315E17000C2105 /* TakePhotoViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoViewControllerViewController.m; sourceTree = "<group>"; };
 		8FE932421A315E17000C2105 /* TakePhotoViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotoViewControllerViewController.xib; sourceTree = "<group>"; };
+		8FE932481A31904A000C2105 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		8FE932491A31904A000C2105 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		8FE9324A1A31904A000C2105 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		8FE932511A31AC18000C2105 /* EGOImageLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadingViewController.h; sourceTree = "<group>"; };
+		8FE932521A31AC18000C2105 /* EGOImageLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadingViewController.m; sourceTree = "<group>"; };
+		8FE932531A31AC18000C2105 /* EGOImageLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGOImageLoadingViewController.xib; sourceTree = "<group>"; };
+		8FE932901A31E3CB000C2105 /* LocateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocateViewController.h; sourceTree = "<group>"; };
+		8FE932911A31E3CB000C2105 /* LocateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocateViewController.m; sourceTree = "<group>"; };
+		8FE932921A31E3CB000C2105 /* LocateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocateViewController.xib; sourceTree = "<group>"; };
+		8FE932951A31E3E9000C2105 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8FE932991A31EC59000C2105 /* MartinDemos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MartinDemos.entitlements; sourceTree = "<group>"; };
+		8FE932DF1A342EA7000C2105 /* StarViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarViewDemoViewController.h; sourceTree = "<group>"; };
+		8FE932E01A342EA7000C2105 /* StarViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarViewDemoViewController.m; sourceTree = "<group>"; };
+		8FE932E11A342EA7000C2105 /* StarViewDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarViewDemoViewController.xib; sourceTree = "<group>"; };
+		8FE932E51A342ED8000C2105 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
+		8FE932E61A342ED8000C2105 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		8FE932E71A342ED8000C2105 /* StarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarView.xib; sourceTree = "<group>"; };
+		8FE932EA1A342F48000C2105 /* icon_ratingbar_full_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_ratingbar_full_empty.png; sourceTree = "<group>"; };
+		8FE932EB1A342F48000C2105 /* icon_ratingbar_full_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_ratingbar_full_filled.png; sourceTree = "<group>"; };
 		A94207C37E38257A10DEF697 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E2952D1E2062EAD63DBA4C05 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE932961A31E3E9000C2105 /* CoreLocation.framework in Frameworks */,
 				8FE932371A306603000C2105 /* AddressBookUI.framework in Frameworks */,
 				8FE932351A3065FF000C2105 /* AddressBook.framework in Frameworks */,
 				8F4793861A1F570F00546648 /* LocalAuthentication.framework in Frameworks */,
@@ -120,6 +161,7 @@
 		4FBAABC1937DB147E205C4ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FE932951A31E3E9000C2105 /* CoreLocation.framework */,
 				8FE932361A306603000C2105 /* AddressBookUI.framework */,
 				8FE932341A3065FF000C2105 /* AddressBook.framework */,
 				E2952D1E2062EAD63DBA4C05 /* libPods.a */,
@@ -191,6 +233,7 @@
 		8F4793571A1F543900546648 /* MartinDemos */ = {
 			isa = PBXGroup;
 			children = (
+				8FE932991A31EC59000C2105 /* MartinDemos.entitlements */,
 				8F4736EF1A2443DD00907787 /* FloatButtonDemo */,
 				8F9939AE1A23431A00CC8128 /* resource */,
 				8F9939A91A2331F800CC8128 /* Tools */,
@@ -215,6 +258,21 @@
 				8FE932401A315E17000C2105 /* TakePhotoViewControllerViewController.h */,
 				8FE932411A315E17000C2105 /* TakePhotoViewControllerViewController.m */,
 				8FE932421A315E17000C2105 /* TakePhotoViewControllerViewController.xib */,
+				8FE932481A31904A000C2105 /* MapViewController.h */,
+				8FE932491A31904A000C2105 /* MapViewController.m */,
+				8FE9324A1A31904A000C2105 /* MapViewController.xib */,
+				8FE932511A31AC18000C2105 /* EGOImageLoadingViewController.h */,
+				8FE932521A31AC18000C2105 /* EGOImageLoadingViewController.m */,
+				8FE932531A31AC18000C2105 /* EGOImageLoadingViewController.xib */,
+				8FE932901A31E3CB000C2105 /* LocateViewController.h */,
+				8FE932911A31E3CB000C2105 /* LocateViewController.m */,
+				8FE932921A31E3CB000C2105 /* LocateViewController.xib */,
+				8FE932DF1A342EA7000C2105 /* StarViewDemoViewController.h */,
+				8FE932E01A342EA7000C2105 /* StarViewDemoViewController.m */,
+				8FE932E11A342EA7000C2105 /* StarViewDemoViewController.xib */,
+				8FDF00241A355CBC00977DFA /* LabelHeightViewController.h */,
+				8FDF00251A355CBC00977DFA /* LabelHeightViewController.m */,
+				8FDF00261A355CBC00977DFA /* LabelHeightViewController.xib */,
 			);
 			path = MartinDemos;
 			sourceTree = "<group>";
@@ -257,6 +315,8 @@
 		8F9939A91A2331F800CC8128 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8FDF00291A35621B00977DFA /* NSString+ML */,
+				8FE932E41A342ED8000C2105 /* StarView */,
 				8F4736F81A244BB700907787 /* Category */,
 				8F4736EE1A2443D600907787 /* MLFloatButton */,
 				8F9939AA1A2331F800CC8128 /* MartinLiPageScrollView */,
@@ -287,6 +347,27 @@
 				8F9939B01A23431A00CC8128 /* testImg1.png */,
 			);
 			path = imgs;
+			sourceTree = "<group>";
+		};
+		8FDF00291A35621B00977DFA /* NSString+ML */ = {
+			isa = PBXGroup;
+			children = (
+				8FDF002A1A35623000977DFA /* NSString+ML.h */,
+				8FDF002B1A35623000977DFA /* NSString+ML.m */,
+			);
+			path = "NSString+ML";
+			sourceTree = "<group>";
+		};
+		8FE932E41A342ED8000C2105 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				8FE932EA1A342F48000C2105 /* icon_ratingbar_full_empty.png */,
+				8FE932EB1A342F48000C2105 /* icon_ratingbar_full_filled.png */,
+				8FE932E51A342ED8000C2105 /* StarView.h */,
+				8FE932E61A342ED8000C2105 /* StarView.m */,
+				8FE932E71A342ED8000C2105 /* StarView.xib */,
+			);
+			path = StarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +422,17 @@
 					8F4793541A1F543900546648 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 96YJH245G7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					8F47936D1A1F543900546648 = {
 						CreatedOnToolsVersion = 6.1;
@@ -375,10 +467,18 @@
 				8F4736FD1A244F8600907787 /* MLFloatButton.xib in Resources */,
 				8F4737061A24A6E100907787 /* testImg2.png in Resources */,
 				8FE9323C1A30897C000C2105 /* UploadImgViewController.xib in Resources */,
+				8FE932551A31AC18000C2105 /* EGOImageLoadingViewController.xib in Resources */,
 				8F4793641A1F543900546648 /* Main.storyboard in Resources */,
+				8FE9324C1A31904A000C2105 /* MapViewController.xib in Resources */,
+				8FDF00281A355CBC00977DFA /* LabelHeightViewController.xib in Resources */,
 				8F9939B11A23431A00CC8128 /* testImg1.png in Resources */,
+				8FE932941A31E3CB000C2105 /* LocateViewController.xib in Resources */,
+				8FE932EC1A342F48000C2105 /* icon_ratingbar_full_empty.png in Resources */,
+				8FE932E91A342ED8000C2105 /* StarView.xib in Resources */,
+				8FE932E31A342EA7000C2105 /* StarViewDemoViewController.xib in Resources */,
 				8F4793691A1F543900546648 /* LaunchScreen.xib in Resources */,
 				8F4793661A1F543900546648 /* Images.xcassets in Resources */,
+				8FE932ED1A342F48000C2105 /* icon_ratingbar_full_filled.png in Resources */,
 				8FE932441A315E17000C2105 /* TakePhotoViewControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,16 +532,23 @@
 			files = (
 				8F4793811A1F54FE00546648 /* TitleCell.m in Sources */,
 				8FE932331A30656B000C2105 /* ContactsViewController.m in Sources */,
+				8FDF00271A355CBC00977DFA /* LabelHeightViewController.m in Sources */,
+				8FE932E21A342EA7000C2105 /* StarViewDemoViewController.m in Sources */,
 				8F4793611A1F543900546648 /* ViewController.m in Sources */,
 				8F47935E1A1F543900546648 /* AppDelegate.m in Sources */,
+				8FE932931A31E3CB000C2105 /* LocateViewController.m in Sources */,
 				8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */,
+				8FE932541A31AC18000C2105 /* EGOImageLoadingViewController.m in Sources */,
 				8F4793841A1F561C00546648 /* TouchIDViewController.m in Sources */,
 				8FE9323B1A30897C000C2105 /* UploadImgViewController.m in Sources */,
 				8F4736F21A2443EF00907787 /* MLFloatButton.m in Sources */,
 				8F4736FB1A244BFB00907787 /* UIView+LoadFromNib.m in Sources */,
+				8FE932E81A342ED8000C2105 /* StarView.m in Sources */,
 				8F4736F71A24448000907787 /* FloatButtonViewController.m in Sources */,
 				8F4737041A249BE200907787 /* SecondViewController.m in Sources */,
+				8FDF002C1A35623000977DFA /* NSString+ML.m in Sources */,
 				8FE932431A315E17000C2105 /* TakePhotoViewControllerViewController.m in Sources */,
+				8FE9324B1A31904A000C2105 /* MapViewController.m in Sources */,
 				8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */,
 				8F47935B1A1F543900546648 /* main.m in Sources */,
 			);
@@ -566,10 +673,14 @@
 			baseConfigurationReference = 4E4E6568290426E87157B3D8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gao Huang (736TRZPDTD)";
+				CODE_SIGN_ENTITLEMENTS = MartinDemos/MartinDemos.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MartinDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -578,10 +689,14 @@
 			baseConfigurationReference = A94207C37E38257A10DEF697 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gao Huang (736TRZPDTD)";
+				CODE_SIGN_ENTITLEMENTS = MartinDemos/MartinDemos.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MartinDemos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

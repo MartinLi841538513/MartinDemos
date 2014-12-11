@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarView">
+            <connections>
+                <outlet property="star1" destination="ila-3M-0cW" id="3Az-mS-NFJ"/>
+                <outlet property="star2" destination="0I8-SN-Xwp" id="9gm-es-OFq"/>
+                <outlet property="star3" destination="kbn-Fo-rKa" id="WQc-Q1-U6l"/>
+                <outlet property="star4" destination="Grf-SE-4Rd" id="8rk-db-lZW"/>
+                <outlet property="star5" destination="35d-ae-GLb" id="viM-c5-AFb"/>
+                <outlet property="starView" destination="QIs-cj-OQN" id="rpP-9Y-rLO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QIs-cj-OQN">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ratingbar_full_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="ila-3M-0cW">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="3Ei-3X-K0E"/>
+                        <constraint firstAttribute="height" constant="20" id="yIe-Rq-7KE"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3Ei-3X-K0E"/>
+                            <exclude reference="yIe-Rq-7KE"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="3Ei-3X-K0E"/>
+                            <include reference="yIe-Rq-7KE"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ratingbar_full_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="0I8-SN-Xwp">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="2Na-SW-5Hw"/>
+                        <constraint firstAttribute="width" constant="20" id="GhA-w4-0Yf"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2Na-SW-5Hw"/>
+                            <exclude reference="GhA-w4-0Yf"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="2Na-SW-5Hw"/>
+                            <include reference="GhA-w4-0Yf"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ratingbar_full_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Grf-SE-4Rd">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="8bg-1g-z5Y"/>
+                        <constraint firstAttribute="width" constant="20" id="tEV-OC-1dt"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8bg-1g-z5Y"/>
+                            <exclude reference="tEV-OC-1dt"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="8bg-1g-z5Y"/>
+                            <include reference="tEV-OC-1dt"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ratingbar_full_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="kbn-Fo-rKa">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="SOW-xO-3yj"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="jQh-3W-a9Q"/>
+                        <constraint firstAttribute="height" constant="20" id="kWc-gX-sGG"/>
+                        <constraint firstAttribute="width" constant="20" id="oei-Ou-T3n"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="SOW-xO-3yj"/>
+                            <exclude reference="jQh-3W-a9Q"/>
+                            <exclude reference="kWc-gX-sGG"/>
+                            <exclude reference="oei-Ou-T3n"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="SOW-xO-3yj"/>
+                            <include reference="jQh-3W-a9Q"/>
+                            <include reference="kWc-gX-sGG"/>
+                            <include reference="oei-Ou-T3n"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ratingbar_full_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="35d-ae-GLb">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="DiU-0Q-YRH"/>
+                        <constraint firstAttribute="width" constant="20" id="ggi-SD-IS6"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DiU-0Q-YRH"/>
+                            <exclude reference="ggi-SD-IS6"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="DiU-0Q-YRH"/>
+                            <include reference="ggi-SD-IS6"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0I8-SN-Xwp" firstAttribute="centerY" secondItem="ila-3M-0cW" secondAttribute="centerY" id="0bp-Do-Pr5"/>
+                <constraint firstItem="35d-ae-GLb" firstAttribute="leading" secondItem="Grf-SE-4Rd" secondAttribute="trailing" constant="8" id="4sg-To-Kex"/>
+                <constraint firstItem="kbn-Fo-rKa" firstAttribute="leading" secondItem="0I8-SN-Xwp" secondAttribute="trailing" constant="8" id="Vjy-4U-zkY"/>
+                <constraint firstItem="Grf-SE-4Rd" firstAttribute="centerY" secondItem="kbn-Fo-rKa" secondAttribute="centerY" id="b0B-2t-LXE"/>
+                <constraint firstItem="35d-ae-GLb" firstAttribute="centerY" secondItem="Grf-SE-4Rd" secondAttribute="centerY" id="dSt-Xv-rP6"/>
+                <constraint firstAttribute="centerY" secondItem="kbn-Fo-rKa" secondAttribute="centerY" id="gBd-Sb-Buy"/>
+                <constraint firstItem="Grf-SE-4Rd" firstAttribute="leading" secondItem="kbn-Fo-rKa" secondAttribute="trailing" constant="8" id="lC8-sx-z7d"/>
+                <constraint firstAttribute="centerX" secondItem="kbn-Fo-rKa" secondAttribute="centerX" id="qNV-Xy-thp"/>
+                <constraint firstItem="0I8-SN-Xwp" firstAttribute="leading" secondItem="ila-3M-0cW" secondAttribute="trailing" constant="8" id="wtW-1D-YJb"/>
+                <constraint firstAttribute="centerY" secondItem="ila-3M-0cW" secondAttribute="centerY" id="xtW-FR-2v3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ila-3M-0cW"/>
+                    <exclude reference="0I8-SN-Xwp"/>
+                    <exclude reference="Grf-SE-4Rd"/>
+                    <exclude reference="kbn-Fo-rKa"/>
+                    <exclude reference="35d-ae-GLb"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0bp-Do-Pr5"/>
+                    <exclude reference="wtW-1D-YJb"/>
+                    <exclude reference="4sg-To-Kex"/>
+                    <exclude reference="dSt-Xv-rP6"/>
+                    <exclude reference="b0B-2t-LXE"/>
+                    <exclude reference="lC8-sx-z7d"/>
+                    <exclude reference="xtW-FR-2v3"/>
+                    <exclude reference="Vjy-4U-zkY"/>
+                    <exclude reference="gBd-Sb-Buy"/>
+                    <exclude reference="qNV-Xy-thp"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ila-3M-0cW"/>
+                    <include reference="0I8-SN-Xwp"/>
+                    <include reference="Grf-SE-4Rd"/>
+                    <include reference="kbn-Fo-rKa"/>
+                    <include reference="35d-ae-GLb"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0bp-Do-Pr5"/>
+                    <include reference="wtW-1D-YJb"/>
+                    <include reference="4sg-To-Kex"/>
+                    <include reference="dSt-Xv-rP6"/>
+                    <include reference="b0B-2t-LXE"/>
+                    <include reference="lC8-sx-z7d"/>
+                    <include reference="xtW-FR-2v3"/>
+                    <include reference="Vjy-4U-zkY"/>
+                    <include reference="gBd-Sb-Buy"/>
+                    <include reference="qNV-Xy-thp"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="603" y="638"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_ratingbar_full_empty.png" width="25" height="23"/>
+    </resources>
+</document>

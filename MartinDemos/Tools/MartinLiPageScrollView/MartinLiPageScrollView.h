@@ -9,14 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @protocol MartinLiPageScrollViewDelegate <NSObject>
-
+@optional
+-(void)imgViewDidTouchActionAtIndex:(NSInteger)index inArray:(NSArray *)array;
 -(void)imgViewDidTouchActionAtIndex:(NSInteger)index;
-
 @end
 
 @interface MartinLiPageScrollView : UIScrollView<UIScrollViewDelegate>
 @property(nonatomic,strong)NSArray *imgs;
 @property(nonatomic,strong)NSArray *titles;
+@property(nonatomic,strong)NSArray *urls;
 @property(nonatomic,assign)float height;
 @property(nonatomic,assign)float timeInterval;
 @property(nonatomic,weak)id<MartinLiPageScrollViewDelegate> martinLiPageScrollViewDelegate;

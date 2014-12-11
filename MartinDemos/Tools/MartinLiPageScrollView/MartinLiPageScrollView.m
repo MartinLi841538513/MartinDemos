@@ -8,11 +8,11 @@
 
 #import "MartinLiPageScrollView.h"
 #import <UIImageView+WebCache.h>
-#define ScreenFrame [UIScreen mainScreen].bounds.size
-
+//#define ScreenFrame [UIScreen mainScreen].bounds.size
+#define ScreenFrame self.frame.size
 @interface MartinLiPageScrollView()
 {
-
+    
 }
 @property(nonatomic,strong)UIPageControl *pageControl;
 @end
@@ -35,18 +35,18 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 -(void)updatePageViewInSuperView:(UIView *)superView{
     [self updatePageViewWithImgs:self.imgs andTitles:self.titles inSuperView:superView];
 }
 -(void)updatePageViewWithImgs:(NSArray *)imgs andTitles:(NSArray *)titles inSuperView:(UIView *)superView{
-   
+    
     self.pagingEnabled = YES;
     self.showsHorizontalScrollIndicator = NO;
     self.bounces = NO;
@@ -57,11 +57,15 @@
     [self addImgViews:imgs withTitles:titles];
     
     [self addSubview:[self setUpPageControlWithImgs:imgs]];
-
+    
     if(!self.timeInterval){
         self.timeInterval=2.0;
     }
-    [NSTimer scheduledTimerWithTimeInterval:self.timeInterval target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
+    
+    static dispatch_once_t once;
+    dispatch_once(&once,^{
+        [NSTimer scheduledTimerWithTimeInterval:self.timeInterval target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
+    });
 }
 
 -(void)addImgViews:(NSArray *)imgs withTitles:(NSArray *)titles{
@@ -81,9 +85,7 @@
             imgUrl = imgs[i-1];
             title = titles[i-1];
         }
-        
-        if ([imgUrl containsString:@"http"]) {
-            
+        if ([imgUrl  hasPrefix:@"http"]) {
             [imgView sd_setImageWithURL:[NSURL URLWithString:imgUrl]];
         }else{
             [imgView setImage:[UIImage imageNamed:imgUrl]];
@@ -91,7 +93,7 @@
         imgView.userInteractionEnabled = YES;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgTapAction:)];
         [imgView addGestureRecognizer:tap];
-
+        
         [self addIndicatorViewAtIndex:i];
         [self addBlackViewInView:imgView withTitle:title andStatus:self.titleIsHidden];
         [self addSubview:imgView];
@@ -101,7 +103,7 @@
 -(void)addIndicatorViewAtIndex:(NSInteger)i{
     float width = 25;
     UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake((self.frame.size.width-width)/2+i*self.frame.size.width, (self.frame.size.height-width)/2, width, width)];
-    [indicatorView setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [indicatorView setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
     [indicatorView startAnimating];
     [self addSubview:indicatorView];
 }
@@ -121,7 +123,7 @@
 }
 
 -(void)imgTapAction:(UITapGestureRecognizer *)tap{
-    [self.martinLiPageScrollViewDelegate imgViewDidTouchActionAtIndex:self.pageControl.currentPage];
+    [self.martinLiPageScrollViewDelegate imgViewDidTouchActionAtIndex:self.pageControl.currentPage inArray:self.urls];
 }
 
 -(void)scrollTimer{
