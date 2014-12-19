@@ -6,3 +6,7 @@ pod 'AMap2DMap' #2D地图SDK(2D地图和3D地图不能同时使用)
 pod 'AMapSearch' #搜索服务SDK
 pod 'EGOImageLoading', '~> 0.0.1'
 pod 'AFNetworking', '~> 2.5.0'
+pod 'RMPickerViewController', '~> 1.3.1'
+pod 'ZBarSDK', '~> 1.3.1'
+pod 'DropdownMenu', '~> 1.0.0'
+

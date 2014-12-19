@@ -6,18 +6,24 @@
 //  Copyright (c) 2014年 Martin. All rights reserved.
 //
 
-#import "EGOImageLoadingViewController.h"
-
-@interface EGOImageLoadingViewController ()
+#import "WebImageLoadingViewController.h"
+#import <UIImageView+AFNetworking.h>
+@interface WebImageLoadingViewController ()
 
 @end
 
-@implementation EGOImageLoadingViewController
+@implementation WebImageLoadingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //self.imgView是EGO的网络图片加载方式，不太好用，但是兼容性好
     self.imgView.imageURL = [NSURL URLWithString:@"http://222.243.208.187/yc/image/8296954b-1306-44e9-8ec5-bcb482e84817_320.jpg"];
+    
+    //AFNetworking的网络图片加载方式
+    [self.imgView2 setImageWithURL:[NSURL URLWithString:@"https://www.google.com.hk/images/srpr/logo11w.png"]];
+    
+    //还有一种是SDWebImage，挺好用的，跟AFNetworking使用类似
 }
 
 - (void)didReceiveMemoryWarning {

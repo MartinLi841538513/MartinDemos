@@ -11,10 +11,15 @@
 #import "UploadImgViewController.h"
 #import "TakePhotoViewControllerViewController.h"
 #import "MapViewController.h"
-#import "EGOImageLoadingViewController.h"
+#import "WebImageLoadingViewController.h"
 #import "LocateViewController.h"
 #import "StarViewDemoViewController.h"
 #import "LabelHeightViewController.h"
+#import "ZBarSDKDemoViewController.h"
+#import "PickerDemoViewController.h"
+#import "CalendarViewController.h"
+#import "DropDownDemoViewController.h"
+#import "TableviewMutiSelectViewController.h"
 @interface ViewController ()
 
 @end
@@ -24,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",@"地图",@"EGOImageLoading",@"定位",@"starViewDemo",@"LabelHeight",nil];
+    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",@"地图",@"WebImageLoading",@"定位",@"starViewDemo",@"LabelHeight",@"ZBar扫一扫",@"选择器",@"日历",@"仿美团的下拉菜单",@"tableview多选",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,7 +72,7 @@
         target = [[MapViewController alloc] initWithNibName:nibName bundle:nil];
     }else if(row==7){
         nibName = @"EGOImageLoadingViewController";
-        target = [[EGOImageLoadingViewController alloc] initWithNibName:nibName bundle:nil];
+        target = [[WebImageLoadingViewController alloc] initWithNibName:nibName bundle:nil];
     }else if (row==8){
         nibName = @"LocateViewController";
         target = [[LocateViewController alloc] initWithNibName:nibName bundle:nil];
@@ -75,6 +80,16 @@
         target = [[StarViewDemoViewController alloc] initWithNibName:@"StarViewDemoViewController" bundle:nil];
     }else if(row==10){
         target = [[LabelHeightViewController alloc] initWithNibName:@"LabelHeightViewController" bundle:nil];
+    }else if(row==11){
+        target = [[ZBarSDKDemoViewController alloc] initWithNibName:@"ZBarSDKDemoViewController" bundle:nil];
+    }else if(row==12){
+        target = [[PickerDemoViewController alloc] initWithNibName:@"PickerDemoViewController" bundle:nil];
+    }else if(row==13){
+        target = [[CalendarViewController alloc] initWithNibName:@"CalendarViewController" bundle:nil];
+    }else if(row==14){
+        target = [[DropDownDemoViewController alloc] initWithNibName:@"DropDownDemoViewController" bundle:nil];
+    }else if (row==15){
+        target = [[TableviewMutiSelectViewController alloc] initWithNibName:@"TableviewMutiSelectViewController" bundle:nil];
     }
     if (identifier!=nil) {
         target = [self.storyboard instantiateViewControllerWithIdentifier:identifier];

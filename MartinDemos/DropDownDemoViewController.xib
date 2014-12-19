@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropDownDemoViewController">
+            <connections>
+                <outlet property="dropDownView" destination="5l8-JU-Q4B" id="eE5-YR-dzT"/>
+                <outlet property="dropDownViewHeight" destination="xor-BI-Rq8" id="1us-Js-Uaw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5l8-JU-Q4B" customClass="DropDownListView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="xor-BI-Rq8"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xor-BI-Rq8"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="xor-BI-Rq8"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5l8-JU-Q4B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E0p-J7-ehK"/>
+                <constraint firstItem="5l8-JU-Q4B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="UZv-Jx-iAJ"/>
+                <constraint firstAttribute="trailing" secondItem="5l8-JU-Q4B" secondAttribute="trailing" id="UgN-5L-Ebh"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5l8-JU-Q4B"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="E0p-J7-ehK"/>
+                    <exclude reference="UZv-Jx-iAJ"/>
+                    <exclude reference="UgN-5L-Ebh"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="5l8-JU-Q4B"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="E0p-J7-ehK"/>
+                    <include reference="UZv-Jx-iAJ"/>
+                    <include reference="UgN-5L-Ebh"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

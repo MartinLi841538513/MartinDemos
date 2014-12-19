@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EGOImageLoadingViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebImageLoadingViewController">
             <connections>
                 <outlet property="imgView" destination="Ay8-94-NFa" id="lXd-DT-VF9"/>
+                <outlet property="imgView2" destination="WXW-h3-Y5e" id="fMM-gG-Fbq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,28 +35,55 @@
                         </mask>
                     </variation>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WXW-h3-Y5e">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="KZg-eC-etT"/>
+                        <constraint firstAttribute="height" constant="97" id="pCv-Av-6pv"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KZg-eC-etT"/>
+                            <exclude reference="pCv-Av-6pv"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="KZg-eC-etT"/>
+                            <include reference="pCv-Av-6pv"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="Ay8-94-NFa" secondAttribute="centerX" id="5RC-c5-IZl"/>
                 <constraint firstItem="Ay8-94-NFa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="J2N-fC-niq"/>
+                <constraint firstItem="WXW-h3-Y5e" firstAttribute="centerX" secondItem="Ay8-94-NFa" secondAttribute="centerX" id="ayK-pm-vCy"/>
+                <constraint firstItem="WXW-h3-Y5e" firstAttribute="top" secondItem="Ay8-94-NFa" secondAttribute="bottom" constant="8" id="ptk-7S-Axk"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="Ay8-94-NFa"/>
+                    <exclude reference="WXW-h3-Y5e"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="5RC-c5-IZl"/>
                     <exclude reference="J2N-fC-niq"/>
+                    <exclude reference="ayK-pm-vCy"/>
+                    <exclude reference="ptk-7S-Axk"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
                     <include reference="Ay8-94-NFa"/>
+                    <include reference="WXW-h3-Y5e"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="5RC-c5-IZl"/>
                     <include reference="J2N-fC-niq"/>
+                    <include reference="ayK-pm-vCy"/>
+                    <include reference="ptk-7S-Axk"/>
                 </mask>
             </variation>
         </view>

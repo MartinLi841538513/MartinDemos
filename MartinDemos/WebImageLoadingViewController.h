@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <EGOImageLoading/EGOImageView.h>
-@interface EGOImageLoadingViewController : UIViewController
+@interface WebImageLoadingViewController : UIViewController
 @property (weak, nonatomic) IBOutlet EGOImageView *imgView;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView2;
 
 @end
