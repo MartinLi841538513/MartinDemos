@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oTq-t6-wxR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oTq-t6-wxR">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -131,6 +131,7 @@
                         <segue destination="BqS-Ie-y7y" kind="show" identifier="TouchIDViewController" id="xWF-9z-L9g"/>
                         <segue destination="9CE-mG-YYE" kind="show" id="DhH-vV-A5R"/>
                         <segue destination="1E1-up-xzQ" kind="show" id="63e-12-fPg"/>
+                        <segue destination="At4-P7-ZWj" kind="show" id="dse-B8-vKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -249,6 +250,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpw-eR-UDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1051.5" y="990"/>
+        </scene>
+        <!--Muti Images Choose View Controller-->
+        <scene sceneID="bSK-Wl-3zy">
+            <objects>
+                <viewController storyboardIdentifier="MLMutiImagesChooseViewController" id="At4-P7-ZWj" customClass="MLMutiImagesChooseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NZE-Ui-LIV"/>
+                        <viewControllerLayoutGuide type="bottom" id="QfS-0v-7SY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pl8-5J-MI8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9j3-JI-kk0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="eh4-zr-jhG">
+                                        <variation key="widthClass=compact" constant="90"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eh4-zr-jhG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="eh4-zr-jhG"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-bF-REF">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="142" y="208" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qan-u3-Xz3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="showImgsCount">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="204" width="112" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showCountAction:" destination="At4-P7-ZWj" eventType="touchUpInside" id="okM-Pn-4LC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9j3-JI-kk0" secondAttribute="trailing" constant="-16" id="UVN-Wg-45H"/>
+                            <constraint firstItem="9j3-JI-kk0" firstAttribute="leading" secondItem="Pl8-5J-MI8" secondAttribute="leadingMargin" constant="-16" id="ffi-8R-sxP"/>
+                            <constraint firstItem="9j3-JI-kk0" firstAttribute="top" secondItem="NZE-Ui-LIV" secondAttribute="bottom" id="gAf-1H-fs3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9j3-JI-kk0"/>
+                                <exclude reference="Qbo-bF-REF"/>
+                                <exclude reference="Qan-u3-Xz3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="UVN-Wg-45H"/>
+                                <exclude reference="ffi-8R-sxP"/>
+                                <exclude reference="gAf-1H-fs3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9j3-JI-kk0"/>
+                                <include reference="Qbo-bF-REF"/>
+                                <include reference="Qan-u3-Xz3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="UVN-Wg-45H"/>
+                                <include reference="ffi-8R-sxP"/>
+                                <include reference="gAf-1H-fs3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="collectionview" destination="9j3-JI-kk0" id="G5v-h1-Xbj"/>
+                        <outlet property="collectionviewHeight" destination="eh4-zr-jhG" id="e07-6f-osY"/>
+                        <outlet property="showCountLabel" destination="Qbo-bF-REF" id="nak-3t-PMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHf-pd-AKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051.5" y="1750"/>
         </scene>
         <!--Title-->
         <scene sceneID="LHB-QU-Zgc">

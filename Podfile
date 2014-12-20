@@ -9,4 +9,5 @@ pod 'AFNetworking', '~> 2.5.0'
 pod 'RMPickerViewController', '~> 1.3.1'
 pod 'ZBarSDK', '~> 1.3.1'
 pod 'DropdownMenu', '~> 1.0.0'
+pod 'ELCImagePickerController', '~> 0.2.0'
 

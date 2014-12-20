@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TakePhotoViewControllerViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *photoButton;
-
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionview;
+@property(nonatomic,strong)NSMutableArray *chooseImages;
 @end

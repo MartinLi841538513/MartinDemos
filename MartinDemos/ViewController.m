@@ -65,8 +65,9 @@
         nibName = @"UploadImgViewController";
         target = [[UploadImgViewController alloc] initWithNibName:nibName bundle:nil];
     }else if(row==5){
-        nibName = @"TakePhotoViewControllerViewController";
-        target = [[TakePhotoViewControllerViewController alloc] initWithNibName:nibName bundle:nil];
+        identifier = @"MLMutiImagesChooseViewController";
+//        nibName = @"TakePhotoViewControllerViewController";
+//        target = [[TakePhotoViewControllerViewController alloc] initWithNibName:nibName bundle:nil];
     }else if(row==6){
         nibName = @"MapViewController";
         target = [[MapViewController alloc] initWithNibName:nibName bundle:nil];

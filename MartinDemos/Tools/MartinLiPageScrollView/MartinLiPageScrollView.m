@@ -85,7 +85,7 @@
             imgUrl = imgs[i-1];
             title = titles[i-1];
         }
-        if ([imgUrl  hasPrefix:@"http"]) {
+        if ([imgUrl hasPrefix:@"http"]) {
             [imgView sd_setImageWithURL:[NSURL URLWithString:imgUrl]];
         }else{
             [imgView setImage:[UIImage imageNamed:imgUrl]];
