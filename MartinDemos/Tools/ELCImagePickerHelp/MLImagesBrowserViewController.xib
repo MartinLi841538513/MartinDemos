@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MLImagesBrowserViewController">
+            <connections>
+                <outlet property="pageView" destination="tkT-p1-etl" id="R5p-2v-teb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkT-p1-etl" customClass="MartinLiPageScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tkT-p1-etl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5fZ-DM-zZE"/>
+                <constraint firstItem="tkT-p1-etl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Doe-9S-X6q"/>
+                <constraint firstAttribute="bottom" secondItem="tkT-p1-etl" secondAttribute="bottom" id="On0-ay-ZHV"/>
+                <constraint firstAttribute="trailing" secondItem="tkT-p1-etl" secondAttribute="trailing" id="gmE-kY-jXh"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="tkT-p1-etl"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5fZ-DM-zZE"/>
+                    <exclude reference="Doe-9S-X6q"/>
+                    <exclude reference="On0-ay-ZHV"/>
+                    <exclude reference="gmE-kY-jXh"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="tkT-p1-etl"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5fZ-DM-zZE"/>
+                    <include reference="Doe-9S-X6q"/>
+                    <include reference="On0-ay-ZHV"/>
+                    <include reference="gmE-kY-jXh"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

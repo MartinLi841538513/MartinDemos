@@ -33,6 +33,8 @@
 		8F5D20CE1A4542DC0045436A /* MLMutiImagesChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D20CD1A4542DC0045436A /* MLMutiImagesChooseViewController.m */; };
 		8F5D20D71A454FA60045436A /* MLMutiImagesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5D20D61A454FA60045436A /* MLMutiImagesViewController.storyboard */; };
 		8F5D20DA1A45539B0045436A /* MLMutiImagesChoosenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D20D91A45539B0045436A /* MLMutiImagesChoosenViewController.m */; };
+		8F5D20EC1A46DE590045436A /* MLImagesBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D20EA1A46DE590045436A /* MLImagesBrowserViewController.m */; };
+		8F5D20ED1A46DE590045436A /* MLImagesBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F5D20EB1A46DE590045436A /* MLImagesBrowserViewController.xib */; };
 		8F7960CF1A3F11E500FEE05D /* DropDownDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7960CD1A3F11E500FEE05D /* DropDownDemoViewController.m */; };
 		8F7960D01A3F11E500FEE05D /* DropDownDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7960CE1A3F11E500FEE05D /* DropDownDemoViewController.xib */; };
 		8F7960D61A3F14C100FEE05D /* down_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F7960D21A3F14C100FEE05D /* down_dark.png */; };
@@ -137,6 +139,9 @@
 		8F5D20D61A454FA60045436A /* MLMutiImagesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MLMutiImagesViewController.storyboard; sourceTree = "<group>"; };
 		8F5D20D81A45539B0045436A /* MLMutiImagesChoosenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMutiImagesChoosenViewController.h; sourceTree = "<group>"; };
 		8F5D20D91A45539B0045436A /* MLMutiImagesChoosenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMutiImagesChoosenViewController.m; sourceTree = "<group>"; };
+		8F5D20E91A46DE590045436A /* MLImagesBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLImagesBrowserViewController.h; sourceTree = "<group>"; };
+		8F5D20EA1A46DE590045436A /* MLImagesBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLImagesBrowserViewController.m; sourceTree = "<group>"; };
+		8F5D20EB1A46DE590045436A /* MLImagesBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLImagesBrowserViewController.xib; sourceTree = "<group>"; };
 		8F7960CC1A3F11E500FEE05D /* DropDownDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownDemoViewController.h; sourceTree = "<group>"; };
 		8F7960CD1A3F11E500FEE05D /* DropDownDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownDemoViewController.m; sourceTree = "<group>"; };
 		8F7960CE1A3F11E500FEE05D /* DropDownDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownDemoViewController.xib; sourceTree = "<group>"; };
@@ -429,6 +434,9 @@
 				8F5D20D61A454FA60045436A /* MLMutiImagesViewController.storyboard */,
 				8F5D20D81A45539B0045436A /* MLMutiImagesChoosenViewController.h */,
 				8F5D20D91A45539B0045436A /* MLMutiImagesChoosenViewController.m */,
+				8F5D20E91A46DE590045436A /* MLImagesBrowserViewController.h */,
+				8F5D20EA1A46DE590045436A /* MLImagesBrowserViewController.m */,
+				8F5D20EB1A46DE590045436A /* MLImagesBrowserViewController.xib */,
 			);
 			path = ELCImagePickerHelp;
 			sourceTree = "<group>";
@@ -649,6 +657,7 @@
 				8F7CDFF01A3D81C500C4869C /* CalendarViewController.xib in Resources */,
 				8F4793661A1F543900546648 /* Images.xcassets in Resources */,
 				8FE932ED1A342F48000C2105 /* icon_ratingbar_full_filled.png in Resources */,
+				8F5D20ED1A46DE590045436A /* MLImagesBrowserViewController.xib in Resources */,
 				8F5D20C51A452FD30045436A /* bg_uploadimage_addimage_takephoto@2x.png in Resources */,
 				8FE932441A315E17000C2105 /* TakePhotoViewControllerViewController.xib in Resources */,
 			);
@@ -739,6 +748,7 @@
 				8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */,
 				8F47935B1A1F543900546648 /* main.m in Sources */,
 				8F5D20BF1A4520360045436A /* MHImagePickerMutilSelector.m in Sources */,
+				8F5D20EC1A46DE590045436A /* MLImagesBrowserViewController.m in Sources */,
 				8F5D20AF1A4401800045436A /* TableviewMutiSelectViewController.m in Sources */,
 				8F5D20CE1A4542DC0045436A /* MLMutiImagesChooseViewController.m in Sources */,
 			);

@@ -8,13 +8,14 @@
 
 #import "MartinLiPageScrollView.h"
 #import <UIImageView+WebCache.h>
-//#define ScreenFrame [UIScreen mainScreen].bounds.size
-#define ScreenFrame self.frame.size
+#define ScreenFrame [UIScreen mainScreen].bounds.size
+//#define ScreenFrame self.frame.size
 @interface MartinLiPageScrollView()
 {
     
 }
 @property(nonatomic,strong)UIPageControl *pageControl;
+
 @end
 
 @implementation MartinLiPageScrollView
@@ -43,52 +44,85 @@
  */
 
 -(void)updatePageViewInSuperView:(UIView *)superView{
-    [self updatePageViewWithImgs:self.imgs andTitles:self.titles inSuperView:superView];
+    [self updateWithImgUrlsInSuperView:superView];
 }
--(void)updatePageViewWithImgs:(NSArray *)imgs andTitles:(NSArray *)titles inSuperView:(UIView *)superView{
+
+//建议使用这个
+-(void)updatePageViewInFatherController:(UIViewController *)fatherController{
+    fatherController.automaticallyAdjustsScrollViewInsets = NO;
+    if (self.imageType==UIImageType) {
+        [self updateWithImagesInFatherController:fatherController];
+    }else if(self.imageType==UIImageUrlType){
+        [self updateWithImgUrlsInSuperView:fatherController.view];
+    }
+}
+-(void)updateWithImgUrlsInSuperView:(UIView *)superView{
     
+    NSInteger imageCount = self.imgUrls.count;
     self.pagingEnabled = YES;
     self.showsHorizontalScrollIndicator = NO;
     self.bounces = NO;
     self.delegate = self;
     self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, ScreenFrame.width, self.height);
-    self.contentSize = CGSizeMake(self.frame.size.width*(imgs.count+2), self.frame.size.height);
+    self.contentSize = CGSizeMake(self.frame.size.width*(imageCount+2), self.frame.size.height);
     [self setContentOffset:CGPointMake(self.frame.size.width, -self.contentInset.top) animated:NO];
-    [self addImgViews:imgs withTitles:titles];
-    
-    [self addSubview:[self setUpPageControlWithImgs:imgs]];
-    
-    if(!self.timeInterval){
-        self.timeInterval=2.0;
-    }
-    
-    static dispatch_once_t once;
-    dispatch_once(&once,^{
-        [NSTimer scheduledTimerWithTimeInterval:self.timeInterval target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
-    });
+    [self addImgViewsWithImgUrls:self.imgUrls withTitles:self.titles];
+    [self addSubview:[self setUpPageControlWithImgCount:imageCount]];
+    [self setAutoScrollTimer];
 }
 
--(void)addImgViews:(NSArray *)imgs withTitles:(NSArray *)titles{
-    for (int i=0; i<imgs.count+2; i++) {
-        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
-        
+-(void)updateWithImagesInFatherController:(UIViewController *)fatherController{
+    NSInteger imageCount = self.images.count;
+    self.pagingEnabled = YES;
+    self.showsHorizontalScrollIndicator = NO;
+    self.bounces = NO;
+    self.delegate = self;
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, ScreenFrame.width, self.height);
+    self.contentSize = CGSizeMake(self.frame.size.width*(imageCount+2), self.frame.size.height);
+    [self setContentOffset:CGPointMake(self.frame.size.width, -self.contentInset.top) animated:NO];
+    [self addImgViewsWithImages:self.images withTitles:self.titles];
+    [self addSubview:[self setUpPageControlWithImgCount:imageCount]];
+}
+
+//设置自动滚动定时器
+-(void)setAutoScrollTimer{
+    if (self.isAutoScroll) {
+        if(!self.timeInterval){
+            self.timeInterval=2.0;
+        }
+        static dispatch_once_t once;
+        dispatch_once(&once,^{
+            [NSTimer scheduledTimerWithTimeInterval:self.timeInterval target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
+        });
+    }
+}
+
+//通过imgUrls  addImageViews
+-(void)addImgViewsWithImgUrls:(NSArray *)imgUrls withTitles:(NSArray *)titles{
+    for (int i=0; i<imgUrls.count+2; i++) {
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.height)];
+        NSLog(@"%@",NSStringFromCGRect(self.frame));
         NSString *imgUrl = nil;
         NSString *title = nil;
         
-        if (i==imgs.count+1) {
-            imgUrl = imgs[0];
+        if (i==imgUrls.count+1) {
+            imgUrl = imgUrls[0];
             title = titles[0];
         }else if(i==0){
-            imgUrl = imgs[imgs.count-1];
-            title = titles[imgs.count-1];
+            imgUrl = imgUrls[imgUrls.count-1];
+            title = titles[imgUrls.count-1];
         } else{
-            imgUrl = imgs[i-1];
+            imgUrl = imgUrls[i-1];
             title = titles[i-1];
         }
-        if ([imgUrl hasPrefix:@"http"]) {
+        if ([imgUrl  hasPrefix:@"http"]) {
             [imgView sd_setImageWithURL:[NSURL URLWithString:imgUrl]];
         }else{
             [imgView setImage:[UIImage imageNamed:imgUrl]];
+        }
+        if (self.pageViewType==MLPageScrollViewFullScreenMode) {
+            [imgView setContentMode:UIViewContentModeScaleAspectFit];
+            self.backgroundColor = [UIColor blackColor];
         }
         imgView.userInteractionEnabled = YES;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgTapAction:)];
@@ -98,6 +132,39 @@
         [self addBlackViewInView:imgView withTitle:title andStatus:self.titleIsHidden];
         [self addSubview:imgView];
     }
+}
+
+//通过images  addImageViews
+-(void)addImgViewsWithImages:(NSArray *)images withTitles:(NSArray *)titles{
+    for (int i=0; i<images.count+2; i++) {
+        UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(i*self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
+        UIImage *image = nil;
+        NSString *title = nil;
+        
+        if (i==images.count+1) {
+            image = images[0];
+            title = titles[0];
+        }else if(i==0){
+            image = images[images.count-1];
+            title = titles[images.count-1];
+        } else{
+            image = images[i-1];
+            title = titles[i-1];
+        }
+        [imgView setImage:image];
+        if (self.pageViewType==MLPageScrollViewFullScreenMode) {
+            [imgView setContentMode:UIViewContentModeScaleAspectFit];
+            self.backgroundColor = [UIColor blackColor];
+        }
+        imgView.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgTapAction:)];
+        [imgView addGestureRecognizer:tap];
+        
+        [self addIndicatorViewAtIndex:i];
+        [self addBlackViewInView:imgView withTitle:title andStatus:self.titleIsHidden];
+        [self addSubview:imgView];
+    }
+
 }
 
 -(void)addIndicatorViewAtIndex:(NSInteger)i{
@@ -126,16 +193,20 @@
     [self.martinLiPageScrollViewDelegate imgViewDidTouchActionAtIndex:self.pageControl.currentPage inArray:self.urls];
 }
 
+-(void)setDefaultLocationIndex:(NSInteger)defaultLocationIndex{
+    [self scrollRectToVisible:CGRectMake(self.frame.size.width*(defaultLocationIndex+1), self.frame.origin.y, self.frame.size.width, self.frame.size.height) animated:YES];
+}
+
 -(void)scrollTimer{
     [self scrollRectToVisible:CGRectMake(self.frame.size.width*(self.pageControl.currentPage+2), self.frame.origin.y, self.frame.size.width, self.frame.size.height) animated:YES];
 }
 
--(UIPageControl *)setUpPageControlWithImgs:(NSArray *)imgs{
+-(UIPageControl *)setUpPageControlWithImgCount:(NSInteger)imgCount{
     float value = 20;
-    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake((self.frame.size.width-value*imgs.count+self.contentOffset.x), self.height-20, value*imgs.count, value)];
+    UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake((self.frame.size.width-value*imgCount+self.contentOffset.x), self.height-20, value*imgCount, value)];
     pageControl.pageIndicatorTintColor = [UIColor grayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor redColor];
-    pageControl.numberOfPages = imgs.count;
+    pageControl.numberOfPages = imgCount;
     pageControl.hidesForSinglePage = YES;
     self.pageControl = pageControl;
     return pageControl;
@@ -145,12 +216,18 @@
 #pragma UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     NSInteger page = scrollView.contentOffset.x/self.frame.size.width;
-    if (page==self.imgs.count+1) {
+    NSArray *array = nil;
+    if (self.imageType==UIImageType) {
+        array = self.images;
+    }else if(self.imageType==UIImageUrlType){
+        array = self.imgUrls;
+    }
+    if (page==array.count+1) {
         page=0;
         [scrollView setContentOffset:CGPointMake((page+1)*scrollView.frame.size.width, -scrollView.contentInset.top) animated:NO];
     }else if(scrollView.contentOffset.x==0){
-        page = self.imgs.count;
-        [scrollView setContentOffset:CGPointMake((self.imgs.count)*scrollView.frame.size.width, -scrollView.contentInset.top) animated:NO];
+        page = array.count;
+        [scrollView setContentOffset:CGPointMake((array.count)*scrollView.frame.size.width, -scrollView.contentInset.top) animated:NO];
     }
     self.pageControl.currentPage = page-1;
     self.pageControl.frame = CGRectMake((self.frame.size.width-self.pageControl.frame.size.width)+scrollView.contentOffset.x, self.pageControl.frame.origin.y, self.pageControl.frame.size.width, self.pageControl.frame.size.height);

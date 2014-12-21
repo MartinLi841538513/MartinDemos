@@ -20,6 +20,7 @@
 #import "CalendarViewController.h"
 #import "DropDownDemoViewController.h"
 #import "TableviewMutiSelectViewController.h"
+#import "MLImagesBrowserViewController.h"
 @interface ViewController ()
 
 @end
@@ -29,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",@"地图",@"WebImageLoading",@"定位",@"starViewDemo",@"LabelHeight",@"ZBar扫一扫",@"选择器",@"日历",@"仿美团的下拉菜单",@"tableview多选",nil];
+    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",@"地图",@"WebImageLoading",@"定位",@"starViewDemo",@"LabelHeight",@"ZBar扫一扫",@"选择器",@"日历",@"仿美团的下拉菜单",@"tableview多选",@"图片全屏浏览",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,6 +92,8 @@
         target = [[DropDownDemoViewController alloc] initWithNibName:@"DropDownDemoViewController" bundle:nil];
     }else if (row==15){
         target = [[TableviewMutiSelectViewController alloc] initWithNibName:@"TableviewMutiSelectViewController" bundle:nil];
+    }else if (row==16){
+        target = [[MLImagesBrowserViewController alloc] initWithNibName:@"MLImagesBrowserViewController" bundle:nil];
     }
     if (identifier!=nil) {
         target = [self.storyboard instantiateViewControllerWithIdentifier:identifier];

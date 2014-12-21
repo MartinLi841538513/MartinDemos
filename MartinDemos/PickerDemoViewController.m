@@ -28,15 +28,6 @@
 }
 
 #pragma mark - RMPickerViewController Delegates
-- (void)pickerViewController:(RMPickerViewController *)vc didSelectRows:(NSArray *)selectedRows {
-    
-    NSString *value = [self valueFromSelectedRows:selectedRows andComponents:self.components];
-    if (vc.picker.tag==1) {
-        [self.seletButton setTitle:value forState:UIControlStateNormal];
-    }else if(vc.picker.tag==2){
-        [self.selectButton2 setTitle:value forState:UIControlStateNormal];
-    }
-}
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return self.components.count;
 }
@@ -49,6 +40,15 @@
     return datas[row];
 }
 
+- (void)pickerViewController:(RMPickerViewController *)vc didSelectRows:(NSArray *)selectedRows {
+    
+    NSString *value = [self valueFromSelectedRows:selectedRows andComponents:self.components];
+    if (vc.picker.tag==1) {
+        [self.seletButton setTitle:value forState:UIControlStateNormal];
+    }else if(vc.picker.tag==2){
+        [self.selectButton2 setTitle:value forState:UIControlStateNormal];
+    }
+}
 
 -(NSString *)valueFromSelectedRows:(NSArray *)selectedRows andComponents:(NSArray *)components{
     NSMutableString *value = [[NSMutableString alloc] init];

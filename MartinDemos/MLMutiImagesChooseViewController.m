@@ -19,13 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MLMutiImagesViewController" bundle:nil];
-    mutiImagesContoller = [storyboard instantiateViewControllerWithIdentifier:@"MLMutiImagesChoosenViewController"];
-    mutiImagesContoller.fatherController = self;
-    mutiImagesContoller.superView = self.collectionview;
-    mutiImagesContoller.collectionviewHeight = self.collectionviewHeight.constant;
-    [self addChildViewController:mutiImagesContoller];
-    [self.collectionview addSubview: mutiImagesContoller.collectionView];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MLMutiImagesViewController" bundle:nil];//（必选）
+    mutiImagesContoller = [storyboard instantiateViewControllerWithIdentifier:@"MLMutiImagesChoosenViewController"];//（必选）
+    mutiImagesContoller.fatherController = self;//（必选）
+    mutiImagesContoller.imageMode = getImagesMode;//（必选）
+    mutiImagesContoller.superView = self.collectionview;//（必选）
+    mutiImagesContoller.collectionviewHeight = self.collectionviewHeight.constant;//（必选）
+    [self addChildViewController:mutiImagesContoller];//（必选）
+    [self.collectionview addSubview: mutiImagesContoller.collectionView];//（必选）
 }
 
 - (IBAction)showCountAction:(id)sender {
