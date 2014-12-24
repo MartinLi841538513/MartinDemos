@@ -57,6 +57,7 @@
 		8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9939A41A23318C00CC8128 /* ScrollPageViewController.m */; };
 		8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */; };
 		8F9939B11A23431A00CC8128 /* testImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F9939B01A23431A00CC8128 /* testImg1.png */; };
+		8FA38B651A4A52CC009633E3 /* libPushSDK-1.8.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA38B641A4A52CC009633E3 /* libPushSDK-1.8.2.a */; };
 		8FDF00271A355CBC00977DFA /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF00251A355CBC00977DFA /* LabelHeightViewController.m */; };
 		8FDF00281A355CBC00977DFA /* LabelHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF00261A355CBC00977DFA /* LabelHeightViewController.xib */; };
 		8FDF002C1A35623000977DFA /* NSString+ML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF002B1A35623000977DFA /* NSString+ML.m */; };
@@ -181,6 +182,7 @@
 		8F9939AB1A2331F800CC8128 /* MartinLiPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MartinLiPageScrollView.h; sourceTree = "<group>"; };
 		8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MartinLiPageScrollView.m; sourceTree = "<group>"; };
 		8F9939B01A23431A00CC8128 /* testImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImg1.png; sourceTree = "<group>"; };
+		8FA38B641A4A52CC009633E3 /* libPushSDK-1.8.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPushSDK-1.8.2.a"; path = "Pods/JPushSDK/lib/libPushSDK-1.8.2.a"; sourceTree = "<group>"; };
 		8FDF00241A355CBC00977DFA /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
 		8FDF00251A355CBC00977DFA /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
 		8FDF00261A355CBC00977DFA /* LabelHeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelHeightViewController.xib; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA38B651A4A52CC009633E3 /* libPushSDK-1.8.2.a in Frameworks */,
 				8FE932961A31E3E9000C2105 /* CoreLocation.framework in Frameworks */,
 				8FE932371A306603000C2105 /* AddressBookUI.framework in Frameworks */,
 				8FE932351A3065FF000C2105 /* AddressBook.framework in Frameworks */,
@@ -245,6 +248,7 @@
 		4FBAABC1937DB147E205C4ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FA38B641A4A52CC009633E3 /* libPushSDK-1.8.2.a */,
 				8FE932951A31E3E9000C2105 /* CoreLocation.framework */,
 				8FE932361A306603000C2105 /* AddressBookUI.framework */,
 				8FE932341A3065FF000C2105 /* AddressBook.framework */,
@@ -879,6 +883,10 @@
 				INFOPLIST_FILE = MartinDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JPushSDK/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -895,6 +903,10 @@
 				INFOPLIST_FILE = MartinDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JPushSDK/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

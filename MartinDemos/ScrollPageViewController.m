@@ -9,8 +9,6 @@
 #import "ScrollPageViewController.h"
 
 @interface ScrollPageViewController ()
-
-
 @end
 
 @implementation ScrollPageViewController
@@ -32,7 +30,6 @@
     self.pageView.defaultLocationIndex = 2;//这一步必须放在最后。（可选）
 
 }
-
 
 #pragma MartinLiPageScrollViewDelegate
 -(void)imgViewDidTouchActionAtIndex:(NSInteger)index inArray:(NSArray *)array{
