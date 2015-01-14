@@ -54,7 +54,7 @@
     
     
     self.view.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleAfterKeyboardHidden)];
     [self.view addGestureRecognizer:tap];
     
     self.view.keyboardTriggerOffset = self.toolBar.bounds.size.height;
@@ -79,23 +79,23 @@
 
 -(void)sendAction:(UIButton *)sender{
     NSLog(@"%@",self.textField.text);
-    [self hideKeyboard];
+    [self handleAfterKeyboardHidden];
     self.label.text = self.textField.text;
     self.textField.text = @"";
 }
 
--(void)showKeyboard{
+-(void)handleAfterKeyboardShown{
     [self.textField becomeFirstResponder];
     self.toolBar.hidden = NO;
 }
 
--(void)hideKeyboard{
+-(void)handleAfterKeyboardHidden{
     [self.textField resignFirstResponder];
     self.toolBar.hidden = YES;
 }
 
 - (IBAction)makeComment:(id)sender {
-    [self showKeyboard];
+    [self handleAfterKeyboardShown];
 }
 
 @end
