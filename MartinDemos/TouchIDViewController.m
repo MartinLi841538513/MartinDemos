@@ -8,6 +8,7 @@
 
 #import "TouchIDViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import <SVProgressHUD.h>
 @interface TouchIDViewController ()
 
 @end
@@ -24,53 +25,52 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)touchIdAction:(id)sender {
-    LAContext *context = [[LAContext alloc] init];
-    
-    NSError *error = nil;
-    if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
-        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-                localizedReason:@"Are you the device owner?"
-                          reply:^(BOOL success, NSError *error) {
-                              
-                              if (error) {
-                                  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                                  message:@"There was a problem verifying your identity."
-                                                                                 delegate:nil
-                                                                        cancelButtonTitle:@"Ok"
-                                                                        otherButtonTitles:nil];
-                                  [alert show];
-                                  return;
-                              }
-                              
-                              if (success) {
-                                  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success"
-                                                                                  message:@"You are the device owner!"
-                                                                                 delegate:nil
-                                                                        cancelButtonTitle:@"Ok"
-                                                                        otherButtonTitles:nil];
-                                  [alert show];
-                                  
-                              } else {
-                                  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                                  message:@"You are not the device owner."
-                                                                                 delegate:nil
-                                                                        cancelButtonTitle:@"Ok"
-                                                                        otherButtonTitles:nil];
-                                  [alert show];
-                              }
-                              
-                          }];
+    LAContext *myContext = [[LAContext alloc] init];
+    NSError *authError = nil;
+    NSString *myLocalizedReasonString = @"Authenticate using your finger";
+    if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
         
+        [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+                  localizedReason:myLocalizedReasonString
+                            reply:^(BOOL succes, NSError *error) {
+                                
+                                //这里回到主线程，否则会在该界面停顿很久
+                                dispatch_async(dispatch_get_main_queue(), ^{
+                                    if (succes) {
+                                        
+                                        NSLog(@"User is authenticated successfully");
+                                    } else {
+                                        
+                                        switch (error.code) {
+                                            case LAErrorAuthenticationFailed:
+                                                NSLog(@"Authentication Failed");
+                                                break;
+                                                
+                                            case LAErrorUserCancel:
+                                                NSLog(@"User pressed Cancel button");
+                                                break;
+                                                
+                                            case LAErrorUserFallback:
+                                                NSLog(@"User pressed \"Enter Password\"");
+                                                break;
+                                                
+                                            default:
+                                                NSLog(@"Touch ID is not configured");
+                                                break;
+                                        }
+                                        
+                                        NSLog(@"Authentication Fails");
+                                    }
+                                
+                                });
+
+                                
+                            }];
     } else {
+        NSLog(@"Can not evaluate Touch ID");
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message:@"Your device cannot authenticate using TouchID."
-                                                       delegate:nil
-                                              cancelButtonTitle:@"Ok"
-                                              otherButtonTitles:nil];
-        [alert show];
-        
-    }}
+    }
+}
 
 /*
 #pragma mark - Navigation
