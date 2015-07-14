@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImagesViewerViewController">
@@ -92,12 +92,12 @@
                     <exclude reference="8w1-hV-9em"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="JWA-kw-rr9"/>
+                    <exclude reference="WFY-oz-1cp"/>
                     <exclude reference="0u3-vV-qHU"/>
                     <exclude reference="gK7-UG-SCY"/>
                     <exclude reference="V5q-Lr-alH"/>
                     <exclude reference="vSr-xb-ggO"/>
-                    <exclude reference="JWA-kw-rr9"/>
-                    <exclude reference="WFY-oz-1cp"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -107,12 +107,12 @@
                     <include reference="8w1-hV-9em"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="JWA-kw-rr9"/>
+                    <include reference="WFY-oz-1cp"/>
                     <include reference="0u3-vV-qHU"/>
                     <include reference="gK7-UG-SCY"/>
                     <include reference="V5q-Lr-alH"/>
                     <include reference="vSr-xb-ggO"/>
-                    <include reference="JWA-kw-rr9"/>
-                    <include reference="WFY-oz-1cp"/>
                 </mask>
             </variation>
         </view>

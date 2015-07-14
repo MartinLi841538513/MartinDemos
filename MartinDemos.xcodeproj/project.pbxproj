@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F4393BC1B50025500D128C1 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4393BA1B50025500D128C1 /* WelcomeViewController.m */; };
+		8F4393BD1B50025500D128C1 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4393BB1B50025500D128C1 /* WelcomeViewController.xib */; };
+		8F4393C31B50027000D128C1 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4393C01B50027000D128C1 /* EAIntroPage.m */; };
+		8F4393C41B50027000D128C1 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4393C21B50027000D128C1 /* EAIntroView.m */; };
 		8F4736F21A2443EF00907787 /* MLFloatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4736F11A2443EF00907787 /* MLFloatButton.m */; };
 		8F4736F71A24448000907787 /* FloatButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4736F61A24448000907787 /* FloatButtonViewController.m */; };
 		8F4736FB1A244BFB00907787 /* UIView+LoadFromNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4736FA1A244BFB00907787 /* UIView+LoadFromNib.m */; };
@@ -61,6 +65,14 @@
 		8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */; };
 		8F9939B11A23431A00CC8128 /* testImg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F9939B01A23431A00CC8128 /* testImg1.png */; };
 		8FA38B651A4A52CC009633E3 /* libPushSDK-1.8.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA38B641A4A52CC009633E3 /* libPushSDK-1.8.2.a */; };
+		8FA65A811B4A86A700BB576E /* ProgressShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA65A7F1B4A86A700BB576E /* ProgressShowController.m */; };
+		8FA65A821B4A86A700BB576E /* ProgressShowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA65A801B4A86A700BB576E /* ProgressShowController.xib */; };
+		8FA65A8A1B4A872300BB576E /* MDRadialProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA65A851B4A872300BB576E /* MDRadialProgressLabel.m */; };
+		8FA65A8B1B4A872300BB576E /* MDRadialProgressTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA65A871B4A872300BB576E /* MDRadialProgressTheme.m */; };
+		8FA65A8C1B4A872300BB576E /* MDRadialProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA65A891B4A872300BB576E /* MDRadialProgressView.m */; };
+		8FCF46311B18389B00608086 /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF462F1B18389B00608086 /* BlueToothViewController.m */; };
+		8FCF46321B18389B00608086 /* BlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF46301B18389B00608086 /* BlueToothViewController.xib */; };
+		8FCF46341B1838AD00608086 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCF46331B1838AD00608086 /* CoreBluetooth.framework */; };
 		8FDF00271A355CBC00977DFA /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF00251A355CBC00977DFA /* LabelHeightViewController.m */; };
 		8FDF00281A355CBC00977DFA /* LabelHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF00261A355CBC00977DFA /* LabelHeightViewController.xib */; };
 		8FDF002C1A35623000977DFA /* NSString+ML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF002B1A35623000977DFA /* NSString+ML.m */; };
@@ -99,6 +111,13 @@
 
 /* Begin PBXFileReference section */
 		4E4E6568290426E87157B3D8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8F4393B91B50025500D128C1 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		8F4393BA1B50025500D128C1 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		8F4393BB1B50025500D128C1 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		8F4393BF1B50027000D128C1 /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		8F4393C01B50027000D128C1 /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		8F4393C11B50027000D128C1 /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		8F4393C21B50027000D128C1 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
 		8F4736F01A2443EF00907787 /* MLFloatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFloatButton.h; sourceTree = "<group>"; };
 		8F4736F11A2443EF00907787 /* MLFloatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFloatButton.m; sourceTree = "<group>"; };
 		8F4736F51A24448000907787 /* FloatButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatButtonViewController.h; sourceTree = "<group>"; };
@@ -191,6 +210,19 @@
 		8F9939AC1A2331F800CC8128 /* MartinLiPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MartinLiPageScrollView.m; sourceTree = "<group>"; };
 		8F9939B01A23431A00CC8128 /* testImg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImg1.png; sourceTree = "<group>"; };
 		8FA38B641A4A52CC009633E3 /* libPushSDK-1.8.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPushSDK-1.8.2.a"; path = "Pods/JPushSDK/lib/libPushSDK-1.8.2.a"; sourceTree = "<group>"; };
+		8FA65A7E1B4A86A700BB576E /* ProgressShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressShowController.h; sourceTree = "<group>"; };
+		8FA65A7F1B4A86A700BB576E /* ProgressShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressShowController.m; sourceTree = "<group>"; };
+		8FA65A801B4A86A700BB576E /* ProgressShowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressShowController.xib; sourceTree = "<group>"; };
+		8FA65A841B4A872300BB576E /* MDRadialProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressLabel.h; sourceTree = "<group>"; };
+		8FA65A851B4A872300BB576E /* MDRadialProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressLabel.m; sourceTree = "<group>"; };
+		8FA65A861B4A872300BB576E /* MDRadialProgressTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressTheme.h; sourceTree = "<group>"; };
+		8FA65A871B4A872300BB576E /* MDRadialProgressTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressTheme.m; sourceTree = "<group>"; };
+		8FA65A881B4A872300BB576E /* MDRadialProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressView.h; sourceTree = "<group>"; };
+		8FA65A891B4A872300BB576E /* MDRadialProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressView.m; sourceTree = "<group>"; };
+		8FCF462E1B18389B00608086 /* BlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothViewController.h; sourceTree = "<group>"; };
+		8FCF462F1B18389B00608086 /* BlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
+		8FCF46301B18389B00608086 /* BlueToothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueToothViewController.xib; sourceTree = "<group>"; };
+		8FCF46331B1838AD00608086 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		8FDF00241A355CBC00977DFA /* LabelHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
 		8FDF00251A355CBC00977DFA /* LabelHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
 		8FDF00261A355CBC00977DFA /* LabelHeightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelHeightViewController.xib; sourceTree = "<group>"; };
@@ -234,6 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCF46341B1838AD00608086 /* CoreBluetooth.framework in Frameworks */,
 				8FA38B651A4A52CC009633E3 /* libPushSDK-1.8.2.a in Frameworks */,
 				8FE932961A31E3E9000C2105 /* CoreLocation.framework in Frameworks */,
 				8FE932371A306603000C2105 /* AddressBookUI.framework in Frameworks */,
@@ -256,6 +289,7 @@
 		4FBAABC1937DB147E205C4ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FCF46331B1838AD00608086 /* CoreBluetooth.framework */,
 				8FA38B641A4A52CC009633E3 /* libPushSDK-1.8.2.a */,
 				8FE932951A31E3E9000C2105 /* CoreLocation.framework */,
 				8FE932361A306603000C2105 /* AddressBookUI.framework */,
@@ -272,6 +306,17 @@
 				A94207C37E38257A10DEF697 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F4393BE1B50027000D128C1 /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				8F4393BF1B50027000D128C1 /* EAIntroPage.h */,
+				8F4393C01B50027000D128C1 /* EAIntroPage.m */,
+				8F4393C11B50027000D128C1 /* EAIntroView.h */,
+				8F4393C21B50027000D128C1 /* EAIntroView.m */,
+			);
+			path = EAIntroView;
 			sourceTree = "<group>";
 		};
 		8F4736EE1A2443D600907787 /* MLFloatButton */ = {
@@ -392,6 +437,15 @@
 				8F61E9791A669ACE00CF43DD /* TextSendKeyboardViewController.h */,
 				8F61E97A1A669ACE00CF43DD /* TextSendKeyboardViewController.m */,
 				8F61E97B1A669ACE00CF43DD /* TextSendKeyboardViewController.xib */,
+				8FCF462E1B18389B00608086 /* BlueToothViewController.h */,
+				8FCF462F1B18389B00608086 /* BlueToothViewController.m */,
+				8FCF46301B18389B00608086 /* BlueToothViewController.xib */,
+				8FA65A7E1B4A86A700BB576E /* ProgressShowController.h */,
+				8FA65A7F1B4A86A700BB576E /* ProgressShowController.m */,
+				8FA65A801B4A86A700BB576E /* ProgressShowController.xib */,
+				8F4393B91B50025500D128C1 /* WelcomeViewController.h */,
+				8F4393BA1B50025500D128C1 /* WelcomeViewController.m */,
+				8F4393BB1B50025500D128C1 /* WelcomeViewController.xib */,
 			);
 			path = MartinDemos;
 			sourceTree = "<group>";
@@ -504,6 +558,8 @@
 		8F9939A91A2331F800CC8128 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				8F4393BE1B50027000D128C1 /* EAIntroView */,
+				8FA65A831B4A871A00BB576E /* MDRadialProgressTheme */,
 				8F61E9751A669AA900CF43DD /* DAKeyboardControl */,
 				8F5D20C31A452FD30045436A /* ELCImagePickerHelp */,
 				8F5D20BC1A4520360045436A /* MHImagePickerMutilSelector */,
@@ -541,6 +597,19 @@
 				8F9939B01A23431A00CC8128 /* testImg1.png */,
 			);
 			path = imgs;
+			sourceTree = "<group>";
+		};
+		8FA65A831B4A871A00BB576E /* MDRadialProgressTheme */ = {
+			isa = PBXGroup;
+			children = (
+				8FA65A841B4A872300BB576E /* MDRadialProgressLabel.h */,
+				8FA65A851B4A872300BB576E /* MDRadialProgressLabel.m */,
+				8FA65A861B4A872300BB576E /* MDRadialProgressTheme.h */,
+				8FA65A871B4A872300BB576E /* MDRadialProgressTheme.m */,
+				8FA65A881B4A872300BB576E /* MDRadialProgressView.h */,
+				8FA65A891B4A872300BB576E /* MDRadialProgressView.m */,
+			);
+			path = MDRadialProgressTheme;
 			sourceTree = "<group>";
 		};
 		8FDF00291A35621B00977DFA /* NSString+ML */ = {
@@ -664,6 +733,7 @@
 				8F4737061A24A6E100907787 /* testImg2.png in Resources */,
 				8F7CE0231A3D8B6A00C4869C /* chack.png in Resources */,
 				8FE9323C1A30897C000C2105 /* UploadImgViewController.xib in Resources */,
+				8FCF46321B18389B00608086 /* BlueToothViewController.xib in Resources */,
 				8FE932551A31AC18000C2105 /* WebImageLoadingViewController.xib in Resources */,
 				8F4793641A1F543900546648 /* Main.storyboard in Resources */,
 				8FE9324C1A31904A000C2105 /* MapViewController.xib in Resources */,
@@ -685,7 +755,9 @@
 				8FE932ED1A342F48000C2105 /* icon_ratingbar_full_filled.png in Resources */,
 				8F5D20ED1A46DE590045436A /* MLImagesBrowserViewController.xib in Resources */,
 				8F5D20C51A452FD30045436A /* bg_uploadimage_addimage_takephoto@2x.png in Resources */,
+				8FA65A821B4A86A700BB576E /* ProgressShowController.xib in Resources */,
 				8FE932441A315E17000C2105 /* TakePhotoViewControllerViewController.xib in Resources */,
+				8F4393BD1B50025500D128C1 /* WelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,12 +817,15 @@
 				8F7CDFEF1A3D81C500C4869C /* CalendarViewController.m in Sources */,
 				8FE932E21A342EA7000C2105 /* StarViewDemoViewController.m in Sources */,
 				8F4793611A1F543900546648 /* ViewController.m in Sources */,
+				8FCF46311B18389B00608086 /* BlueToothViewController.m in Sources */,
 				8F7CE01C1A3D8B6A00C4869C /* CalendarDayCell.m in Sources */,
 				8F47935E1A1F543900546648 /* AppDelegate.m in Sources */,
+				8F4393BC1B50025500D128C1 /* WelcomeViewController.m in Sources */,
 				8FE932931A31E3CB000C2105 /* LocateViewController.m in Sources */,
 				8F7CE0221A3D8B6A00C4869C /* MLCalendarViewController.m in Sources */,
 				8F9939AD1A2331F800CC8128 /* MartinLiPageScrollView.m in Sources */,
 				8F5D20C81A4533C70045436A /* ChoosenImageCell.m in Sources */,
+				8F4393C31B50027000D128C1 /* EAIntroPage.m in Sources */,
 				8FE932541A31AC18000C2105 /* WebImageLoadingViewController.m in Sources */,
 				8F4793841A1F561C00546648 /* TouchIDViewController.m in Sources */,
 				8F5D20DA1A45539B0045436A /* MLMutiImagesChoosenViewController.m in Sources */,
@@ -770,15 +845,20 @@
 				8F4736F71A24448000907787 /* FloatButtonViewController.m in Sources */,
 				8F7CE01D1A3D8B6A00C4869C /* CalendarDayModel.m in Sources */,
 				8F4737041A249BE200907787 /* SecondViewController.m in Sources */,
+				8FA65A8B1B4A872300BB576E /* MDRadialProgressTheme.m in Sources */,
+				8F4393C41B50027000D128C1 /* EAIntroView.m in Sources */,
 				8FDF002C1A35623000977DFA /* NSString+ML.m in Sources */,
 				8FE932431A315E17000C2105 /* TakePhotoViewControllerViewController.m in Sources */,
 				8FE9324B1A31904A000C2105 /* MapViewController.m in Sources */,
 				8F9939A51A23318C00CC8128 /* ScrollPageViewController.m in Sources */,
+				8FA65A8A1B4A872300BB576E /* MDRadialProgressLabel.m in Sources */,
 				8F47935B1A1F543900546648 /* main.m in Sources */,
+				8FA65A811B4A86A700BB576E /* ProgressShowController.m in Sources */,
 				8F5D20BF1A4520360045436A /* MHImagePickerMutilSelector.m in Sources */,
 				8F5D20EC1A46DE590045436A /* MLImagesBrowserViewController.m in Sources */,
 				8F5D20AF1A4401800045436A /* TableviewMutiSelectViewController.m in Sources */,
 				8F5D20CE1A4542DC0045436A /* MLMutiImagesChooseViewController.m in Sources */,
+				8FA65A8C1B4A872300BB576E /* MDRadialProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,7 @@
 #import "TableviewMutiSelectViewController.h"
 #import "MLImagesBrowserViewController.h"
 #import "TextSendKeyboardViewController.h"
+#import "BlueToothViewController.h"
 @interface ViewController ()
 
 @end
@@ -31,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",@"地图",@"WebImageLoading",@"定位",@"starViewDemo",@"LabelHeight",@"ZBar扫一扫",@"选择器",@"日历",@"仿美团的下拉菜单",@"tableview多选",@"图片全屏浏览",@"文字发送键盘",nil];
+    self.datas = [NSArray arrayWithObjects:@"指纹识别",@"ScrollView分页",@"悬浮按钮",@"通讯录",@"HTTPClient上传图片",@"拍照",@"地图",@"WebImageLoading",@"定位",@"starViewDemo",@"LabelHeight",@"ZBar扫一扫",@"选择器",@"日历",@"仿美团的下拉菜单",@"tableview多选",@"图片全屏浏览",@"文字发送键盘",@"蓝牙开发",@"显示进度",@"欢迎界面",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -97,6 +98,12 @@
         target = [[MLImagesBrowserViewController alloc] initWithNibName:@"MLImagesBrowserViewController" bundle:nil];
     }else if (row==17){
         target = [[TextSendKeyboardViewController alloc] initWithNibName:@"TextSendKeyboardViewController" bundle:nil];
+    }else if (row==18){
+        target = [[BlueToothViewController alloc] initWithNibName:@"BlueToothViewController" bundle:nil];
+    }else if (row==19){
+        target = [[ProgressShowController alloc] initWithNibName:@"ProgressShowController" bundle:nil];
+    }else if (row==20){
+        target = [[WelcomeViewController alloc] initWithNibName:@"WelcomeViewController" bundle:nil];
     }
     if (identifier!=nil) {
         target = [self.storyboard instantiateViewControllerWithIdentifier:identifier];

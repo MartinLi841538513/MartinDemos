@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3127EB0B-522D-4DB5-B53A-371752711A39</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MartinDemos</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DA52EB19D2D088FF30F28CD12FF99EEC378C2D28</key>
+		<string>https://github.com/MartinLi841538513/MartinDemos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MartinDemos.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DA52EB19D2D088FF30F28CD12FF99EEC378C2D28</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MartinLi841538513/MartinDemos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DA52EB19D2D088FF30F28CD12FF99EEC378C2D28</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DA52EB19D2D088FF30F28CD12FF99EEC378C2D28</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MartinDemos</string>
+		</dict>
+	</array>
+</dict>
+</plist>

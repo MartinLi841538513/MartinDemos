@@ -1,0 +1,2 @@
+PODS_JPUSHSDK_LIBRARY_SEARCH_PATHS = $(PODS_ROOT)/JPushSDK/lib
+PODS_JPUSHSDK_OTHER_LDFLAGS = -l"z" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"

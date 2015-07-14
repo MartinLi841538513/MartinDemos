@@ -43,6 +43,7 @@
 - (void)pickerViewController:(RMPickerViewController *)vc didSelectRows:(NSArray *)selectedRows {
     
     NSString *value = [self valueFromSelectedRows:selectedRows andComponents:self.components];
+    NSLog(@"%@",selectedRows);
     if (vc.picker.tag==1) {
         [self.seletButton setTitle:value forState:UIControlStateNormal];
     }else if(vc.picker.tag==2){
